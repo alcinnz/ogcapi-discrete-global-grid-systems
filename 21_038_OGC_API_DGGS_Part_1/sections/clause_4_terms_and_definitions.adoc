@@ -4,14 +4,20 @@ This document uses the terms defined in Sub-clause 5.3 of <<OGC06-121r9>>, which
 
 For the purposes of this document, the following additional terms and definitions apply.
 
-=== example term
+=== coordinate reference system
 
-term used for exemplary purposes
+coordinate system that is related to an object by a datum
 
-[.source]
-<<ISO19101-1>>
+(SOURCE: ISO 19111:2019, Clause 3.1.9)
 
-NOTE: An example note.
+=== datum
 
-[example]
-Here's an example of an example term.
+parameter or set of parameters that realize the positions of the origin, the scale, and the orientation of a coordinate system
+
+(SOURCE: ISO 19111:2019, Clause 3.1.15)
+
+=== Web API
+
+API using an architectural style that is founded on the technologies of the Web
+
+NOTE: Best Practice 24: Use Web Standards as the foundation of APIs in the W3C Data on the Web Best Practices provides more detail.

@@ -1,14 +1,14 @@
 MIME-Version: 1.0
-Content-Type: multipart/related; boundary="----=_NextPart_58ebcba7.a27f.4df4"
+Content-Type: multipart/related; boundary="----=_NextPart_e3444dc3.9a6a.4c5b"
 
-------=_NextPart_58ebcba7.a27f.4df4
+------=_NextPart_e3444dc3.9a6a.4c5b
 Content-ID: <document.htm>
 Content-Disposition: inline; filename="document.htm"
 Content-Type: text/html; charset="utf-8"
 
 <?xml version="1.0"?>
 <html xmlns:epub="http://www.idpf.org/2007/ops" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40" lang="en" xml:lang="en">
-  <head><!--[if gte mso 9]>
+  <head>
 <xml>
 <w:WordDocument>
 <w:View>Print</w:View>
@@ -16,12 +16,11 @@ Content-Type: text/html; charset="utf-8"
 <w:DoNotOptimizeForBrowser/>
 </w:WordDocument>
 </xml>
-<![endif]-->
 <meta http-equiv=Content-Type content="text/html; charset=utf-8"/>
 
   <link rel=File-List href="cid:filelist.xml"/>
-<style>
-  <!--
+<style><![CDATA[
+<!--
 @charset "UTF-8";
 /* Font Definitions */
 @font-face {
@@ -177,6 +176,7 @@ p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxS
 p.MsoCommentText, li.MsoCommentText, div.MsoCommentText {
   mso-style-noshow: yes;
   mso-style-unhide: no;
+  mso-style-name: "Comment Text";
   margin: 0cm;
   margin-bottom: .0001pt;
   mso-pagination: widow-orphan;
@@ -393,10 +393,11 @@ span.blackgraphtx {
 div.figure, p.figure {
   text-align: center; }
 
-h1 {
+h1, .h1 {
   mso-style-priority: 1;
   mso-style-unhide: no;
   mso-style-qformat: yes;
+  mso-style-name: "Heading 1";
   mso-style-link: "Heading 1 Char";
   mso-style-next: Normal;
   margin-top: 13.5pt;
@@ -407,8 +408,6 @@ h1 {
   line-height: 13.5pt;
   mso-pagination: widow-orphan;
   page-break-after: avoid;
-  mso-outline-level: 1;
-  mso-list: l1 level1 lfo6;
   mso-hyphenate: none;
   tab-stops: 0.7cm;
   font-size: 13.0pt;
@@ -420,6 +419,10 @@ h1 {
   mso-ansi-language: EN-GB;
   mso-fareast-language: JA;
   mso-bidi-font-weight: normal; }
+
+h1 {
+  mso-outline-level: 1;
+  mso-list: l1 level1 lfo6; }
 
 h1.Annex {
   mso-style-priority: 1;
@@ -479,10 +482,11 @@ h1.Annex {
   mso-fareast-language: JA;
   mso-bidi-font-weight: normal; }
 
-h2 {
+h2, .h2 {
   mso-style-priority: 2;
   mso-style-unhide: no;
   mso-style-qformat: yes;
+  mso-style-name: "Heading 2";
   mso-style-parent: "Heading 1";
   mso-style-link: "Heading 2 Char";
   mso-style-next: Normal;
@@ -494,8 +498,6 @@ h2 {
   line-height: 12.5pt;
   mso-pagination: widow-orphan;
   page-break-after: avoid;
-  mso-outline-level: 2;
-  mso-list: l1 level2 lfo6;
   mso-hyphenate: none;
   tab-stops: 1.0cm;
   font-size: 12.0pt;
@@ -507,11 +509,16 @@ h2 {
   mso-fareast-language: JA;
   mso-bidi-font-weight: normal; }
 
-h3 {
+h2 {
+  mso-outline-level: 2;
+  mso-list: l1 level2 lfo6; }
+
+h3, .h3 {
   mso-style-priority: 3;
   mso-style-unhide: no;
   mso-style-qformat: yes;
-  mso-style-parent: "Heading 1";
+  mso-style-name: "Heading 3";
+  mso-style-parent: "Heading 2";
   mso-style-link: "Heading 3 Char";
   mso-style-next: Normal;
   margin-top: 3.0pt;
@@ -522,8 +529,6 @@ h3 {
   line-height: 12.0pt;
   mso-pagination: widow-orphan;
   page-break-after: avoid;
-  mso-outline-level: 3;
-  mso-list: l1 level3 lfo6;
   mso-hyphenate: none;
   tab-stops: 1.3cm;
   font-size: 11.0pt;
@@ -534,10 +539,15 @@ h3 {
   mso-fareast-language: JA;
   mso-bidi-font-weight: normal; }
 
-h4 {
+h3 {
+  mso-outline-level: 3;
+  mso-list: l1 level3 lfo6; }
+
+h4, .h4 {
   mso-style-priority: 4;
   mso-style-unhide: no;
   mso-style-qformat: yes;
+  mso-style-name: "Heading 4";
   mso-style-parent: "Heading 3";
   mso-style-link: "Heading 4 Char";
   mso-style-next: Normal;
@@ -549,8 +559,6 @@ h4 {
   line-height: 12.0pt;
   mso-pagination: widow-orphan;
   page-break-after: avoid;
-  mso-outline-level: 4;
-  mso-list: l1 level4 lfo6;
   mso-hyphenate: none;
   tab-stops: 1.6cm;
   font-size: 11.0pt;
@@ -561,10 +569,15 @@ h4 {
   mso-fareast-language: JA;
   mso-bidi-font-weight: normal; }
 
-h5 {
+h4 {
+  mso-outline-level: 4;
+  mso-list: l1 level4 lfo6; }
+
+h5, .h5 {
   mso-style-priority: 5;
   mso-style-unhide: no;
   mso-style-qformat: yes;
+  mso-style-name: "Heading 5";
   mso-style-parent: "Heading 4";
   mso-style-link: "Heading 5 Char";
   mso-style-next: Normal;
@@ -576,8 +589,6 @@ h5 {
   line-height: 12.0pt;
   mso-pagination: widow-orphan;
   page-break-after: avoid;
-  mso-outline-level: 5;
-  mso-list: l1 level5 lfo6;
   mso-hyphenate: none;
   tab-stops: 1.9cm;
   font-size: 11.0pt;
@@ -588,10 +599,15 @@ h5 {
   mso-fareast-language: JA;
   mso-bidi-font-weight: normal; }
 
-h6 {
+h5 {
+  mso-outline-level: 5;
+  mso-list: l1 level5 lfo6; }
+
+h6, .h6 {
   mso-style-priority: 6;
   mso-style-unhide: no;
   mso-style-qformat: yes;
+  mso-style-name: "Heading 6";
   mso-style-parent: "Heading 5";
   mso-style-link: "Heading 6 Char";
   mso-style-next: Normal;
@@ -603,8 +619,6 @@ h6 {
   line-height: 12.0pt;
   mso-pagination: widow-orphan;
   page-break-after: avoid;
-  mso-outline-level: 6;
-  mso-list: l1 level6 lfo6;
   mso-hyphenate: none;
   tab-stops: 2.2cm;
   font-size: 11.0pt;
@@ -615,9 +629,14 @@ h6 {
   mso-fareast-language: JA;
   mso-bidi-font-weight: normal; }
 
+h6 {
+  mso-outline-level: 6;
+  mso-list: l1 level6 lfo6; }
+
 p.MsoToc1, li.MsoToc1, div.MsoToc1 {
   mso-style-priority: 39;
   mso-style-unhide: no;
+  mso-style-name: "TOC 1";
   mso-style-next: Normal;
   margin-top: 6.0pt;
   margin-right: 25.0pt;
@@ -641,6 +660,7 @@ p.MsoToc2, li.MsoToc2, div.MsoToc2 {
   mso-style-noshow: yes;
   mso-style-priority: 39;
   mso-style-unhide: no;
+  mso-style-name: "TOC 2";
   mso-style-parent: "TOC 1";
   mso-style-next: Normal;
   margin-top: 0cm;
@@ -665,6 +685,7 @@ p.MsoToc3, li.MsoToc3, div.MsoToc3 {
   mso-style-noshow: yes;
   mso-style-priority: 39;
   mso-style-unhide: no;
+  mso-style-name: "TOC 3";
   mso-style-parent: "TOC 2";
   mso-style-next: Normal;
   margin-top: 0cm;
@@ -687,6 +708,7 @@ p.MsoToc3, li.MsoToc3, div.MsoToc3 {
 
 span.MsoFootnoteReference {
   mso-style-priority: 99;
+  mso-style-name: "Footnote Reference";
   vertical-align: super; }
 
 p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText {
@@ -1208,6 +1230,74 @@ p.Tablebody, li.Tablebody, div.Tablebody {
   margin-left: 162.0pt;
   text-indent: -18.0pt; }
 
+/* steps ordered list: all numbers */
+@list l4 {
+  mso-list-id: 525294608;
+  mso-list-template-ids: 676331812; }
+
+@list l4:level1 {
+  mso-level-text: "%1.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 18.0pt;
+  text-indent: -18.0pt; }
+
+@list l4:level2 {
+  mso-level-text: "%2.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 36.0pt;
+  text-indent: -18.0pt; }
+
+@list l4:level3 {
+  mso-level-text: "%3.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 54.0pt;
+  text-indent: -18.0pt; }
+
+@list l4:level4 {
+  mso-level-text: "%4.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 72.0pt;
+  text-indent: -18.0pt; }
+
+@list l4:level5 {
+  mso-level-text: "%5.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 90.0pt;
+  text-indent: -18.0pt; }
+
+@list l4:level6 {
+  mso-level-text: "%6.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 108.0pt;
+  text-indent: -18.0pt; }
+
+@list l4:level7 {
+  mso-level-tab-stop: none;
+  mso-level-text: "%7.";
+  mso-level-number-position: left;
+  margin-left: 126.0pt;
+  text-indent: -18.0pt; }
+
+@list l4:level8 {
+  mso-level-text: "%8.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 144.0pt;
+  text-indent: -18.0pt; }
+
+@list l4:level9 {
+  mso-level-text: "%9.";
+  mso-level-tab-stop: none;
+  mso-level-number-position: left;
+  margin-left: 162.0pt;
+  text-indent: -18.0pt; }
+
 div.ListContLevel1 {
   mso-style-priority: 34;
   margin-left: 18.0pt;
@@ -1277,7 +1367,7 @@ ul {
   margin-left: 18pt; }
 
 -->
-</style><meta http-equiv=Content-Type content="text/html; charset=UTF-8"/>
+]]></style><meta http-equiv=Content-Type content="text/html; charset=UTF-8"/>
     <style>
       <!--
 div.table_container {
@@ -1640,7 +1730,6 @@ p.Terms, li.Terms, div.Terms {
   mso-fareast-font-family: "Times New Roman",serif;
   mso-bidi-font-family: "Times New Roman",serif;
   mso-ansi-language: EN-GB;
-  font-weight: bold;
   mso-bidi-font-weight: normal; }
 
 p.AltTerms, li.AltTerms, div.AltTerms {
@@ -2145,8 +2234,7 @@ div.example p.MsoListParagraph {
   font-size: 10.0pt; }
 
 div.Note p.MsoListParagraph {
-  font-size: 10.0pt;
-  margin-left: 1.0cm; }
+  font-size: 10.0pt; }
 
 div.Note span.stem {
   font-size: 10.0pt; }
@@ -2182,6 +2270,10 @@ div.warning p {
 
 span.hi {
   background-color: yellow; }
+
+span.AdmittedLabel {
+  color: #00335b;
+  background-color: #CFE2F3; }
 
 -->
     </style>
@@ -2232,7 +2324,13 @@ span.hi {
 
 
 <p class="MsoNormal" align="right" style="text-align:right">
-  <span lang="EN-GB" style="mso-no-proof:yes;font-size:10.0pt" xml:lang="EN-GB">Editor: Dr. Matthew Brian John Purss, Editor Two</span>
+  <span lang="EN-GB" style="mso-no-proof:yes;font-size:10.0pt" xml:lang="EN-GB">Contributor: </span>
+</p>
+
+
+
+<p class="MsoNormal" align="right" style="text-align:right">
+  <span lang="EN-GB" style="mso-no-proof:yes;font-size:10.0pt" xml:lang="EN-GB">Editors: Dr. Matthew Brian John Purss, Editor Two</span>
 </p>
 
 
@@ -2251,16 +2349,16 @@ span.hi {
     <div><p class="TitlePageSubhead">Copyright notice</p>
 
 
-      <p style="text-align:center;" align="center" class="MsoNormal"><a name="_f0007a79-224c-4f39-a7c4-c4e89ccbc5e9" id="_f0007a79-224c-4f39-a7c4-c4e89ccbc5e9"></a>Copyright
-        &#xA9; 2021 Open Geospatial Consortium<br/>
+      <p style="text-align:center;" align="center" class="MsoNormal"><a name="_609a02a1-fa53-7a69-1cb9-ff2ed59292e2" id="_609a02a1-fa53-7a69-1cb9-ff2ed59292e2"></a>Copyright
+        &#xA9; 2022 Open Geospatial Consortium<br/>
         To obtain additional rights of use, visit
         <a href="http://www.ogc.org/legal/">http://www.ogc.org/legal/</a></p>
     </div>
     <div><p class="TitlePageSubhead">Note</p>
 
-      <p style="text-align:left;" align="left" class="MsoNormal"><a name="_f2137218-a1ce-4468-9bf3-ea039dd9ea7b" id="_f2137218-a1ce-4468-9bf3-ea039dd9ea7b"></a>Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+      <p style="text-align:left;" align="left" class="MsoNormal"><a name="_11e88dba-9912-1a89-a82d-7291bf232191" id="_11e88dba-9912-1a89-a82d-7291bf232191"></a>Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
-      <p style="text-align:left;" align="left" class="MsoNormal"><a name="_86ae499f-714c-4780-a379-76e8ee486730" id="_86ae499f-714c-4780-a379-76e8ee486730"></a>Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+      <p style="text-align:left;" align="left" class="MsoNormal"><a name="_15067213-c07b-cba0-7e18-395ab2e00ab3" id="_15067213-c07b-cba0-7e18-395ab2e00ab3"></a>Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
     </div>
   </div>
 
@@ -2268,11 +2366,11 @@ span.hi {
       <div class="boilerplate-legal">
 
 
-    <div><p class="TitlePageSubhead">Warning for Drafts</p>
+    <div><p class="TitlePageSubhead">Notice for Drafts</p>
 
-      <p class="MsoNormal"><a name="_78c9c138-0bd5-4ffc-89e7-282090283a20" id="_78c9c138-0bd5-4ffc-89e7-282090283a20"></a>This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
+      <p class="MsoNormal"><a name="_09caafd2-d047-3050-9095-b3f182faf86f" id="_09caafd2-d047-3050-9095-b3f182faf86f"></a>This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
 
-      <p class="MsoNormal"><a name="_3986946f-1073-4853-a56e-875049fa273e" id="_3986946f-1073-4853-a56e-875049fa273e"></a>Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+      <p class="MsoNormal"><a name="_d80fd0eb-fbfd-dec3-0ddb-92472f4d5fcf" id="_d80fd0eb-fbfd-dec3-0ddb-92472f4d5fcf"></a>Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
     </div>
 
 
@@ -2322,7 +2420,7 @@ span.hi {
     <div><p class="TitlePageSubhead">License Agreement</p>
 
 
-      <p class="license"><a name="_03e66146-6dce-435f-b712-55fe041e6c9d" id="_03e66146-6dce-435f-b712-55fe041e6c9d"></a>Permission is hereby granted by the Open Geospatial
+      <p class="license"><a name="_e8566381-218f-c22d-320d-4d0371bfd58f" id="_e8566381-218f-c22d-320d-4d0371bfd58f"></a>Permission is hereby granted by the Open Geospatial
         Consortium, (&#x201C;Licensor&#x201D;), free of charge and subject to the terms set
         forth below, to any person obtaining a copy of this Intellectual Property and
         any associated documentation, to deal in the Intellectual Property without
@@ -2333,12 +2431,12 @@ span.hi {
         on the intellectual property are retained intact and that each person to whom
         the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
 
-      <p class="license"><a name="_88da5557-0236-4968-937e-dd1836cf01e3" id="_88da5557-0236-4968-937e-dd1836cf01e3"></a>If you modify the Intellectual Property, all copies of
+      <p class="license"><a name="_52ebb386-d365-27d0-d76d-a59ac165fc4d" id="_52ebb386-d365-27d0-d76d-a59ac165fc4d"></a>If you modify the Intellectual Property, all copies of
         the modified Intellectual Property must include, in addition to the above
         copyright notice, a notice that the Intellectual Property includes
         modifications that have not been approved or adopted by LICENSOR.</p>
 
-      <p class="license"><a name="_7cfd6c28-c13b-4890-8951-2c0236a0735e" id="_7cfd6c28-c13b-4890-8951-2c0236a0735e"></a>THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
+      <p class="license"><a name="_178f14b4-0718-a5b8-09cd-84f8f4b756ed" id="_178f14b4-0718-a5b8-09cd-84f8f4b756ed"></a>THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
         CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
         THE INTELLECTUAL PROPERTY IS PROVIDED &#x201C;AS
         IS&#x201D;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
@@ -2356,7 +2454,7 @@ span.hi {
         OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR
         PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
 
-      <p class="license"><a name="_43d42980-a1ed-43f4-a9fd-9e54261f68d4" id="_43d42980-a1ed-43f4-a9fd-9e54261f68d4"></a>This license is effective until terminated. You may
+      <p class="license"><a name="_2ad7fe27-9ae4-52c5-9dd9-faa4004247fb" id="_2ad7fe27-9ae4-52c5-9dd9-faa4004247fb"></a>This license is effective until terminated. You may
         terminate it at any time by destroying the Intellectual Property together with
         all copies in any form. The license will also terminate if you fail to comply
         with any term or condition of this Agreement. Except as provided in the
@@ -2372,7 +2470,7 @@ span.hi {
         destroyed the Intellectual Property together with all copies in any form,
         whether held by you or by any third party.</p>
 
-      <p class="license"><a name="_fde4df22-dbbc-4aed-8a92-0ee6024ce081" id="_fde4df22-dbbc-4aed-8a92-0ee6024ce081"></a>Except as contained in this notice, the name of
+      <p class="license"><a name="_3254c815-179c-5f54-9a01-b8e964837171" id="_3254c815-179c-5f54-9a01-b8e964837171"></a>Except as contained in this notice, the name of
         LICENSOR or of any other holder of a copyright in all or part of the Intellectual
         Property shall not be used in advertising or otherwise to promote the sale, use
         or other dealings in this Intellectual Property without prior written
@@ -2390,7 +2488,7 @@ span.hi {
         decision, action or inaction by LICENSOR shall be construed to be a waiver of
         any rights or remedies available to it.</p>
 
-      <p class="license"><a name="_5c139993-7720-4fb2-9bc0-cc6b17b88826" id="_5c139993-7720-4fb2-9bc0-cc6b17b88826"></a>None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
+      <p class="license"><a name="_4fa1ef5b-3dd5-7a05-3c68-bca93a0f14bb" id="_4fa1ef5b-3dd5-7a05-3c68-bca93a0f14bb"></a>None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
     </div>
   </div>
 
@@ -2398,7 +2496,7 @@ span.hi {
 <div class="boilerplate-feedback">
 
     <div><a name="boilerplate-standard-feedback" id="boilerplate-standard-feedback"></a>
-      <p class="MsoNormal"><a name="_b008539b-0b4e-4168-8f8c-0690002b6768" id="_b008539b-0b4e-4168-8f8c-0690002b6768"></a>Suggested additions, changes and comments on this standard are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <a href="http://portal.opengeospatial.org/public_ogc/change_request.php">http://portal.opengeospatial.org/public_ogc/change_request.php</a></p>
+      <p class="MsoNormal"><a name="_bbc1a653-f270-135d-9455-af930feb3587" id="_bbc1a653-f270-135d-9455-af930feb3587"></a>Suggested additions, changes and comments on this document are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <a href="http://portal.opengeospatial.org/public_ogc/change_request.php">http://portal.opengeospatial.org/public_ogc/change_request.php</a></p>
     </div>
 
   </div>
@@ -2415,22 +2513,22 @@ span.hi {
 <p class="MsoToc1"><span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC
   \o "1-2" \h \z \u <span style="mso-element:field-separator"></span></span>
 <span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc239147323">Copyright notice<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc774406518">Copyright notice<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc239147323 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc774406518 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
 
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc210129385">Note<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc195045282">Note<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc210129385 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc195045282 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2439,11 +2537,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc345996767">License Agreement<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc762330397">License Agreement<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc345996767 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc762330397 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2452,11 +2550,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc224922352">Warning for Drafts<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc665590501">Notice for Drafts<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc224922352 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc665590501 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2465,11 +2563,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc670701016">I. Abstract<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc590337619">I. Abstract<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc670701016 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc590337619 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2478,11 +2576,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc096360808">II. Keywords<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc651230974">II. Keywords<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc096360808 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc651230974 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2491,11 +2589,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc367505774">III. Preface<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc157917162">III. Preface<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc367505774 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc157917162 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2504,11 +2602,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc784757531">IV. Security Considerations<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc520244943">IV. Security considerations<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc784757531 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc520244943 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2517,11 +2615,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc303528610">V. Submitting Organizations<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc461743753">V. Submitting Organizations<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc303528610 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc461743753 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2530,11 +2628,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc379172683">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc376315481">1. Scope<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc379172683 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc376315481 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2543,11 +2641,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc838913657">2. Conformance<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc246650369">2. Conformance<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc838913657 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc246650369 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2556,11 +2654,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc993382783">3. Normative references<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc611854055">3. Normative references<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc993382783 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc611854055 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2569,11 +2667,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc986746264">4. Terms and definitions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc848388656">4. Terms and definitions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc986746264 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc848388656 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2582,11 +2680,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc957489220">5. Conventions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc379188831">5. Conventions<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc957489220 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc379188831 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2595,11 +2693,11 @@ span.hi {
 <p class="MsoToc2">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc975136378">5.1. Identifiers<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc945052730">5.1. Identifiers<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc975136378 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc945052730 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2608,11 +2706,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc491729871">6. Clauses not Containing Normative Material<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc808264031">6. Clauses not Containing Normative Material<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc491729871 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc808264031 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2621,11 +2719,11 @@ span.hi {
 <p class="MsoToc2">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc034119072">6.1. Clauses not containing normative material sub-clause 1<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc499850262">6.1. Clauses not containing normative material sub-clause 1<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc034119072 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc499850262 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2634,11 +2732,11 @@ span.hi {
 <p class="MsoToc2">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc069341159">6.2. Clauses not containing normative material sub-clause 2<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc287221580">6.2. Clauses not containing normative material sub-clause 2<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc069341159 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc287221580 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2647,50 +2745,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc686392641">7. Clause containing normative material<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc524392530">7. Clause containing normative material<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc686392641 \h </span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
-  </span>
-</p>
-
-<p class="MsoToc2">
-  <span class="MsoHyperlink">
-    <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc750018176">7.1. Requirement Class A or Requirement A Example<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-tab-count:1 dotted">. </span>
-</span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc750018176 \h </span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
-  </span>
-</p>
-
-<p class="MsoToc1">
-  <span class="MsoHyperlink">
-    <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc706911638">8. Media Types for any data encoding(s)<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-tab-count:1 dotted">. </span>
-</span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc706911638 \h </span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
-  </span>
-</p>
-
-<p class="MsoToc1">
-  <span class="MsoHyperlink">
-    <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc003989039">Annex A (normative) Conformance Class Abstract Test Suite (Normative)<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-tab-count:1 dotted">. </span>
-</span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc003989039 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc524392530 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2699,11 +2758,11 @@ span.hi {
 <p class="MsoToc2">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc886209478">A.1. Conformance Class A<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc311936348">7.1. Requirement Class A or Requirement A Example<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc886209478 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc311936348 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2712,11 +2771,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc811523841">Annex B (informative) Title<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc887045093">8. Media Types for any data encoding(s)<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc811523841 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc887045093 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2725,11 +2784,24 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc577779876">Annex C (normative) Revision History<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc249680304">Annex A (informative) Conformance Class Abstract Test Suite (Normative)<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc577779876 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc249680304 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
+  </span>
+</p>
+
+<p class="MsoToc2">
+  <span class="MsoHyperlink">
+    <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc188674871">A.1. Conformance Class A<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span>
+</span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc188674871 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2738,76 +2810,11 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc073998332">Bibliography<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc547017597">Annex B (informative) Title<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc073998332 \h </span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
-  </span>
-</p>
-
-<p class="MsoToc1">
-  <span lang="EN-GB" xml:lang="EN-GB">
-    <span style="mso-element:field-end"></span>
-  </span>
-  <span lang="EN-GB" xml:lang="EN-GB">
-    <p class="MsoNormal">&#xA0;</p>
-  </span>
-</p>
-<p class="TOCTitle">List of Tables</p><p class="MsoToc1">                  <span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC
-\h \z \t "TableTitle,tabletitle" <span style="mso-element:field-separator"></span></span>
-<span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc318501879">Table 1<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-tab-count:1 dotted">. </span>
-</span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc318501879 \h </span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
-
-<p class="MsoToc1">
-  <span class="MsoHyperlink">
-    <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc611594004">Table C.1<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-tab-count:1 dotted">. </span>
-</span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc611594004 \h </span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
-  </span>
-</p>
-
-<p class="MsoToc1">
-  <span lang="EN-GB" xml:lang="EN-GB">
-    <span style="mso-element:field-end"></span>
-  </span>
-  <span lang="EN-GB" xml:lang="EN-GB">
-    <p class="MsoNormal">&#xA0;</p>
-  </span>
-</p>
-<p class="TOCTitle">List of Recommendations</p><p class="MsoToc1">                  <span lang="EN-GB" xml:lang="EN-GB"><span style="mso-element:field-begin"></span><span style="mso-spacerun:yes">&#xA0;</span>TOC
-\h \z \t "RecommendationTitle,recommendationtitle" 
-<span style="mso-element:field-separator"></span></span>
-<span class="MsoHyperlink"><span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc246202703">Requirement Class 1:<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-tab-count:1 dotted">. </span>
-</span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc246202703 \h </span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
-  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span></span></p>
-
-<p class="MsoToc1">
-  <span class="MsoHyperlink">
-    <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc926340447">Requirement 1:<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-tab-count:1 dotted">. </span>
-</span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
-<span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc926340447 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc547017597 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2816,11 +2823,24 @@ span.hi {
 <p class="MsoToc1">
   <span class="MsoHyperlink">
     <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
-<a href="#_Toc803771599">Requirement A.1:<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<a href="#_Toc500990947">Annex C (informative) Revision History<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-tab-count:1 dotted">. </span>
 </span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
 <span style="mso-element:field-begin"></span></span>
-<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc803771599 \h </span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc500990947 \h </span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
+  <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
+  </span>
+</p>
+
+<p class="MsoToc1">
+  <span class="MsoHyperlink">
+    <span lang="EN-GB" style="mso-no-proof:yes" xml:lang="EN-GB">
+<a href="#_Toc310087006">Bibliography<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-tab-count:1 dotted">. </span>
+</span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">
+<span style="mso-element:field-begin"></span></span>
+<span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"> PAGEREF _Toc310087006 \h </span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-separator"></span></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB">1</span>
   <span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"></span><span lang="EN-GB" class="MsoTocTextSpan" xml:lang="EN-GB"><span style="mso-element:field-end"></span></span></a></span>
   </span>
@@ -2852,30 +2872,30 @@ span.hi {
       </p>
       <div><a name="_abstract" id="_abstract"></a>
         <h1 class="AbstractTitle">I.<span style="mso-tab-count:1">&#xA0; </span>Abstract</h1>
-        <p class="MsoNormal"><a name="_d586f4f9-15bb-4279-a42c-62b8ec821042" id="_d586f4f9-15bb-4279-a42c-62b8ec821042"></a>&lt;Insert Abstract Text here&gt;</p>
+        <p class="MsoNormal"><a name="_ea8b918b-259f-ad32-41cd-bf6720709423" id="_ea8b918b-259f-ad32-41cd-bf6720709423"></a>&lt;Insert Abstract Text here&gt;</p>
       </div>
-      <div class="Section3"><a name="_0da94dea-ba85-4c3f-8513-566e90e61296" id="_0da94dea-ba85-4c3f-8513-566e90e61296"></a>
+      <div class="Section3"><a name="_19317f3f-be4d-4306-9ba5-0e0c80433b3a" id="_19317f3f-be4d-4306-9ba5-0e0c80433b3a"></a>
         <h1 class="IntroTitle">II.<span style="mso-tab-count:1">&#xA0; </span>Keywords</h1>
         <p class="MsoNormal">The following are keywords to be used by search engines and
     document catalogues.</p>
-        <p class="MsoNormal">ogcdoc, OGC document, API, openapi, html</p>
+        <p class="MsoNormal">ogcdoc, OGC document, API, openapi, html, ogcapi</p>
       </div>
       <p class="MsoNormal">
         <br clear="all" style="mso-special-character:line-break;page-break-before:always"/>
       </p>
-      <div><a name="_e4fe98e7-e1c0-4ea2-8291-305cfebfc36f" id="_e4fe98e7-e1c0-4ea2-8291-305cfebfc36f"></a>
+      <div><a name="_2fc7f941-8cac-e65f-3e51-3b9f18652ea3" id="_2fc7f941-8cac-e65f-3e51-3b9f18652ea3"></a>
         <h1 class="ForewordTitle">III.<span style="mso-tab-count:1">&#xA0; </span>Preface</h1>
-        <div class="Note"><a name="_a0c37ae4-ad1d-4178-b5b4-94b953ecaf9c" id="_a0c37ae4-ad1d-4178-b5b4-94b953ecaf9c"></a>
+        <div class="Note"><a name="_b54ab49b-0988-938f-ab2d-38e2ffda33ce" id="_b54ab49b-0988-938f-ab2d-38e2ffda33ce"></a>
           <p class="Note"><span class="note_label">NOTE</span><span style="mso-tab-count:1">&#xA0; </span>Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.</p>
         </div>
-        <p class="MsoNormal"><a name="_c4fee548-2fc1-449c-a68a-801a9a54beb2" id="_c4fee548-2fc1-449c-a68a-801a9a54beb2"></a>Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
-        <p class="MsoNormal"><a name="_365b9dac-f180-4053-aabc-69651bb40dc4" id="_365b9dac-f180-4053-aabc-69651bb40dc4"></a>Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+        <p class="MsoNormal"><a name="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a" id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a"></a>Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+        <p class="MsoNormal"><a name="_25f6b7a1-8657-2655-9eff-47df179631e0" id="_25f6b7a1-8657-2655-9eff-47df179631e0"></a>Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
       </div>
-      <div class="Section3"><a name="_7fce3858-cd6d-4cc9-9505-ed9cf2dac001" id="_7fce3858-cd6d-4cc9-9505-ed9cf2dac001"></a>
-        <h1 class="IntroTitle">IV.<span style="mso-tab-count:1">&#xA0; </span>Security Considerations</h1>
-        <p class="MsoNormal"><a name="_3ce0d908-c586-4d8e-974f-9058f5f27c02" id="_3ce0d908-c586-4d8e-974f-9058f5f27c02"></a>No security considerations have been made for this standard.</p>
+      <div class="Section3"><a name="_81b1ace7-21d3-2259-3346-8f24ee71ed45" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45"></a>
+        <h1 class="IntroTitle">IV.<span style="mso-tab-count:1">&#xA0; </span>Security considerations</h1>
+        <p class="MsoNormal"><a name="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a" id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a"></a>No security considerations have been made for this document.</p>
       </div>
-      <div class="Section3"><a name="_f81b4f14-f3fa-425c-b9a4-cb56dabc2be8" id="_f81b4f14-f3fa-425c-b9a4-cb56dabc2be8"></a>
+      <div class="Section3"><a name="_d4336dc2-c5ce-482a-93e2-b477d06c7c60" id="_d4336dc2-c5ce-482a-93e2-b477d06c7c60"></a>
         <h1 class="IntroTitle">V.<span style="mso-tab-count:1">&#xA0; </span>Submitting Organizations</h1>
         <p class="MsoNormal">The following organizations submitted this Document to the
    Open Geospatial Consortium (OGC):</p>
@@ -2893,61 +2913,78 @@ span.hi {
       <p class="zzSTDTitle1">OGC API - Discrete Global Grid Systems - Part 1: Core</p>
       <div><a name="_scope" id="_scope"></a>
         <h1>1.<span style="mso-tab-count:1">&#xA0; </span>Scope</h1>
-        <div class="Note"><a name="_d2dc7248-cc66-41e6-bbc3-a2ad551a7305" id="_d2dc7248-cc66-41e6-bbc3-a2ad551a7305"></a>
+        <div class="Note"><a name="_19759895-aabd-4232-a497-4ca4b6a23eb3" id="_19759895-aabd-4232-a497-4ca4b6a23eb3"></a>
           <p class="Note"><span class="note_label">NOTE</span><span style="mso-tab-count:1">&#xA0; </span>Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.</p>
         </div>
       </div>
       <div><a name="_conformance" id="_conformance"></a>
         <h1>2.<span style="mso-tab-count:1">&#xA0; </span>Conformance</h1>
-        <p class="MsoNormal"><a name="_4e5df26c-31af-464e-897b-0f52979e993f" id="_4e5df26c-31af-464e-897b-0f52979e993f"></a>This standard defines XXXX.</p>
-        <p class="MsoNormal"><a name="_18d51e2a-c506-4459-a557-5bc89063b4a6" id="_18d51e2a-c506-4459-a557-5bc89063b4a6"></a>Requirements for N standardization target types are considered:</p>
-        
-<p style="mso-list:l3 level1 lfo2;" class="MsoListParagraphCxSpFirst">
-AAAA
+        <p class="MsoNormal"><a name="_12e50e71-32c9-4841-9afc-c19b6e3ab821" id="_12e50e71-32c9-4841-9afc-c19b6e3ab821"></a>This standard defines XXXX.</p>
+        <p class="MsoNormal"><a name="_b116691a-08b1-0620-ae3d-86e5f3a8a421" id="_b116691a-08b1-0620-ae3d-86e5f3a8a421"></a>Requirements for N standardization target types are considered:</p>
+        <p style="mso-list:l3 level1 lfo2;" class="MsoListParagraphCxSpFirst">AAAA
 </p>
-<p style="mso-list:l3 level1 lfo2;" class="MsoListParagraphCxSpLast">
-BBBB
+<p style="mso-list:l3 level1 lfo2;" class="MsoListParagraphCxSpLast">BBBB
 </p>
 
-        <p class="MsoNormal"><a name="_dca985a9-5d3a-4d78-9e05-e07fa0804b7c" id="_dca985a9-5d3a-4d78-9e05-e07fa0804b7c"></a>Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.</p>
-        <p class="MsoNormal"><a name="_55dfe6df-ecd1-49c6-8cd1-3e1f4c87a959" id="_55dfe6df-ecd1-49c6-8cd1-3e1f4c87a959"></a>In order to conform to this OGC&#xAE; interface standard, a software implementation shall choose to implement:</p>
-        
-<p style="mso-list:l3 level1 lfo3;" class="MsoListParagraphCxSpFirst">
-Any one of the conformance levels specified in Annex A (normative).
+        <p class="MsoNormal"><a name="_c881dc19-eab9-6206-0bbd-c6f07d4bb744" id="_c881dc19-eab9-6206-0bbd-c6f07d4bb744"></a>Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.</p>
+        <p class="MsoNormal"><a name="_7552ac2a-6499-a44e-13ca-4abd7e2a63c4" id="_7552ac2a-6499-a44e-13ca-4abd7e2a63c4"></a>In order to conform to this OGC&#xAE; interface standard, a software implementation shall choose to implement:</p>
+        <p style="mso-list:l3 level1 lfo3;" class="MsoListParagraphCxSpFirst">Any one of the conformance levels specified in Annex A (normative).
 </p>
-<p style="mso-list:l3 level1 lfo3;" class="MsoListParagraphCxSpLast">
-Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).
+<p style="mso-list:l3 level1 lfo3;" class="MsoListParagraphCxSpLast">Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).
 </p>
 
-        <p class="MsoNormal"><a name="_495cc7ce-59e8-4351-9b00-93876b3f7ab5" id="_495cc7ce-59e8-4351-9b00-93876b3f7ab5"></a>All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.</p>
+        <p class="MsoNormal"><a name="_595f6be4-4135-af56-59ba-b377f03b0a65" id="_595f6be4-4135-af56-59ba-b377f03b0a65"></a>All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.</p>
       </div>
-      <div><h1>3.<span style="mso-tab-count:1">&#xA0; </span>Normative references</h1><p class="MsoNormal"><a name="_6f2f240e-1a41-493d-9bca-1e166f795b4d" id="_6f2f240e-1a41-493d-9bca-1e166f795b4d"></a>The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-
-<p class="NormRef"><a name="Smith81" id="Smith81"></a><i>Identification of Common Molecular Subsequences</i>. Smith, T.F., Waterman, M.S., J. Mol. Biol. 147, 195&#x2013;197 (1981)</p><p class="NormRef"><a name="May06" id="May06"></a><i>ZIB Structure Prediction Pipeline: Composing a Complex Biological Workflow through Web Services</i>. May, P., Ehrlich, H.C., Steinke, T. In: Nagel, W.E., Walter, W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148&#x2013;1158. Springer, Heidelberg (2006)</p><p class="NormRef"><a name="Grid" id="Grid"></a><i>The Grid: Blueprint for a New Computing Infrastructure.</i>, Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</p><p class="NormRef"><a name="Czajkowski01" id="Czajkowski01"></a><i>Grid Information Services for Distributed Resource Sharing.</i>Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High Performance Distributed Computing, pp. 181&#x2013;184. IEEE Press, New York (2001)</p><p class="NormRef"><a name="Foster02" id="Foster02"></a><i>The Physiology of the Grid: an Open Grid Services Architecture for Distributed Systems Integration.</i>Foster, I., Kesselman, C., Nick, J., Tuecke, S. Technical report, Global Grid Forum (2002)</p><p class="NormRef"><a name="NCBI" id="NCBI"></a><i>National Center for Biotechnology Information</i>, <a href="http://www.ncbi.nlm.nih.gov">http://www.ncbi.nlm.nih.gov</a></p><p class="NormRef"><a name="ISO19101-1" id="ISO19101-1"></a>ISO: ISO 19101-1:2014, <i>Geographic information&#x2009;&#x2014;&#x2009;Reference model&#x2009;&#x2014;&#x2009;Part 1: Fundamentals</i>. <span>International Organization for Standardization</span>, Geneva (2014). <a href="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</a></p> <p class="NormRef"><a name="ISO19115-1" id="ISO19115-1"></a>ISO: ISO 19115-1:2014, <i>Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;Part 1: Fundamentals</i>. <span>International Organization for Standardization</span>, Geneva (2014). <a href="https://www.iso.org/standard/53798.html">https://www.iso.org/standard/53798.html</a></p> <p class="NormRef"><a name="ISO19157" id="ISO19157"></a>ISO: ISO 19157:2013, <i>Geographic information &#x2009;&#x2014;&#x2009;Data quality</i>. <span>International Organization for Standardization</span>, Geneva (2013). <a href="https://www.iso.org/standard/32575.html">https://www.iso.org/standard/32575.html</a></p><p class="NormRef"><a name="ISO19139" id="ISO19139"></a>ISO: ISO 19139:2007, <i>Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;XML schema implementation</i>. <span>ISO</span> (2007). </p><p class="NormRef"><a name="ISO19115-3" id="ISO19115-3"></a>ISO: ISO/CD 19115-3, <i>Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;Part 3: XML schema implementation for fundamental concepts</i>. <span>International Organization for Standardization</span>, Geneva<a href="https://www.iso.org/standard/80874.html">https://www.iso.org/standard/80874.html</a></p> <p class="NormRef"><a name="OGC15-097" id="OGC15-097"></a>Joan Mas&#xF3; and Lucy Bastin : OGC 15-097r1, <i>OGC&#xAE; Geospatial User Feedback Standard: Conceptual Model</i>. <span>Open Geospatial Consortium</span> (2016). <a href="http://docs.opengeospatial.org/is/15-097r1/15-097r1.html">http://docs.opengeospatial.org/is/15-097r1/15-097r1.html</a></p> <p class="NormRef"><a name="OGC12-019" id="OGC12-019"></a>Gerhard Gr&#xF6;ger, Thomas H. Kolbe, Claus Nagel, Karl-Heinz H&#xE4;fele: OGC 12-019, <i>OGC City Geography Markup Language (CityGML) Encoding Standard</i>. <span>Open Geospatial Consortium</span> (2012). <a href="https://portal.ogc.org/files/?artifact_id=47842">https://portal.ogc.org/files/?artifact_id=47842</a></p> <p class="NormRef"><a name="OGC14-005r3" id="OGC14-005r3"></a>Jiyeong Lee, Ki-Joune Li, Sisi Zlatanova, Thomas H. Kolbe, Claus Nagel, Thomas Becker: OGC 14-005r3, <i>OGC&#xAE; IndoorGML</i>. <span>Open Geospatial Consortium</span> (2014). <a href="http://docs.opengeospatial.org/is/14-005r3/14-005r3.html">http://docs.opengeospatial.org/is/14-005r3/14-005r3.html</a></p> <p class="NormRef"><a name="OGC06121r9" id="OGC06121r9"></a>Arliss Whiteside Jim Greenwood : OGC 06-121r9, <i>OGC Web Service Common Implementation Specification</i>. <span>Open Geospatial Consortium</span> (2010). <a href="https://portal.ogc.org/files/?artifact_id=38867">https://portal.ogc.org/files/?artifact_id=38867</a></p></div>
-      <div><a name="_terms_and_definitions" id="_terms_and_definitions"></a><h1>4.<span style="mso-tab-count:1">&#xA0; </span>Terms and definitions</h1><p class="MsoNormal"><a name="_2afe4973-2fae-4758-8b09-f590a46f2a5c" id="_2afe4973-2fae-4758-8b09-f590a46f2a5c"></a>For the purposes of this document,
-    the following terms and definitions apply.</p><p class="MsoNormal"><a name="_ef496295-43d6-424f-a522-1170bee386d7" id="_ef496295-43d6-424f-a522-1170bee386d7"></a>This document uses the terms defined in Sub-clause 5.3 of <a href="#OGC06-121r9">[OGC06-121r9]</a>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word &#x201C;shall&#x201D; (not &#x201C;must&#x201D;) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.</p><p class="MsoNormal"><a name="_dc0fbfab-2b2f-4b35-90c4-f6f5f65b2900" id="_dc0fbfab-2b2f-4b35-90c4-f6f5f65b2900"></a>For the purposes of this document, the following additional terms and definitions apply.</p><p class="TermNum"><a name="term-example-term" id="term-example-term"></a>4.1.&#xA0;example term</p><p class="MsoNormal"><a name="_49cfaf02-efe3-49dd-beae-da763ad299a8" id="_49cfaf02-efe3-49dd-beae-da763ad299a8"></a>term used for exemplary purposes</p>
+      <div><h1>3.<span style="mso-tab-count:1">&#xA0; </span>Normative references</h1>
+<p class="MsoNormal"><a name="_307b20e2-9e40-db56-abbf-2822ab2941cc" id="_307b20e2-9e40-db56-abbf-2822ab2941cc"></a>The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
 
-<div class="Note" style="page-break-after:avoid;"><a name="_ae2eafa3-21fa-42e6-97ca-2127cb96ac1e" id="_ae2eafa3-21fa-42e6-97ca-2127cb96ac1e"></a><p class="Note">Note 1 to entry: An example note.</p></div><p class="SourceTitle" style="text-align:center;">Example </p><div class="example"><a name="_b02827cc-160e-4fd4-8247-68d328617c12" id="_b02827cc-160e-4fd4-8247-68d328617c12"></a>
-<p class="example"><a name="_4ee610f3-4013-4496-a997-4ccea89f108d" id="_4ee610f3-4013-4496-a997-4ccea89f108d"></a>Here&#x2019;s an example of an example term.</p>
-</div><p class="MsoNormal">[SOURCE: <a href="#ISO19101-1">ISO 19101-1:2014</a>]</p></div>
+
+
+<p class="NormRef"><a name="Smith81" id="Smith81"></a><i>Identification of Common Molecular Subsequences</i>. Smith, T.F., Waterman, M.S., J. Mol. Biol. 147, 195&#x2013;197 (1981)</p>
+<p class="NormRef"><a name="May06" id="May06"></a><i>ZIB Structure Prediction Pipeline: Composing a Complex Biological Workflow through Web Services</i>. May, P., Ehrlich, H.C., Steinke, T. In: Nagel, W.E., Walter, W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148&#x2013;1158. Springer, Heidelberg (2006)</p>
+<p class="NormRef"><a name="Grid" id="Grid"></a><i>The Grid: Blueprint for a New Computing Infrastructure.</i>, Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</p>
+<p class="NormRef"><a name="Czajkowski01" id="Czajkowski01"></a><i>Grid Information Services for Distributed Resource Sharing.</i>Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High Performance Distributed Computing, pp. 181&#x2013;184. IEEE Press, New York (2001)</p>
+<p class="NormRef"><a name="Foster02" id="Foster02"></a><i>The Physiology of the Grid: an Open Grid Services Architecture for Distributed Systems Integration.</i>Foster, I., Kesselman, C., Nick, J., Tuecke, S. Technical report, Global Grid Forum (2002)</p>
+<p class="NormRef"><a name="NCBI" id="NCBI"></a><i>National Center for Biotechnology Information</i>, <a href="http://www.ncbi.nlm.nih.gov">http://www.ncbi.nlm.nih.gov</a></p>
+<p class="NormRef"><a name="ISO19101-1" id="ISO19101-1"></a>ISO: ISO 19101-1:2014, <i>Geographic information&#x2009;&#x2014;&#x2009;Reference model&#x2009;&#x2014;&#x2009;Part 1: Fundamentals</i>. <span>International Organization for Standardization</span>, Geneva (2014). <a href="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</a></p>
+ <p class="NormRef"><a name="ISO19115-1" id="ISO19115-1"></a>ISO: ISO 19115-1:2014, <i>Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;Part 1: Fundamentals</i>. <span>International Organization for Standardization</span>, Geneva (2014). <a href="https://www.iso.org/standard/53798.html">https://www.iso.org/standard/53798.html</a></p>
+ <p class="NormRef"><a name="ISO19157" id="ISO19157"></a>ISO: ISO 19157:2013, <i>Geographic information &#x2009;&#x2014;&#x2009;Data quality</i>. <span>International Organization for Standardization</span>, Geneva (2013). <a href="https://www.iso.org/standard/32575.html">https://www.iso.org/standard/32575.html</a></p>
+<p class="NormRef"><a name="ISO19139" id="ISO19139"></a>ISO: ISO 19139:2007, <i>Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;XML schema implementation</i>. <span>ISO</span> (2007). </p>
+<p class="NormRef"><a name="ISO19115-3" id="ISO19115-3"></a>ISO: ISO/DIS 19115-3, <i>Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;Part 3: XML schema implementation for fundamental concepts</i>. <span>International Organization for Standardization</span>, Geneva<a href="https://www.iso.org/standard/80874.html">https://www.iso.org/standard/80874.html</a></p>
+<p class="NormRef"><a name="OGC15-097" id="OGC15-097"></a><i>OGC Geospatial User Feedback Standard: Conceptual Model</i> (2016)</p>
+<p class="NormRef"><a name="OGC12-019" id="OGC12-019"></a>Gerhard Gr&#xF6;ger, Thomas H. Kolbe, Claus Nagel, Karl-Heinz H&#xE4;fele: OGC 12-019, <i>OGC City Geography Markup Language (CityGML) Encoding Standard</i>. <span>Open Geospatial Consortium</span> (2012). <a href="https://portal.ogc.org/files/?artifact_id=47842">https://portal.ogc.org/files/?artifact_id=47842</a></p>
+ <p class="NormRef"><a name="OGC14-005r3" id="OGC14-005r3"></a>Jiyeong Lee, Ki-Joune Li, Sisi Zlatanova, Thomas H. Kolbe, Claus Nagel, Thomas Becker: OGC 14-005r3, <i>OGC&#xAE; IndoorGML</i>. <span>Open Geospatial Consortium</span> (2014). <a href="http://docs.opengeospatial.org/is/14-005r3/14-005r3.html">http://docs.opengeospatial.org/is/14-005r3/14-005r3.html</a></p>
+ <p class="NormRef"><a name="OGC06121r9" id="OGC06121r9"></a>Arliss Whiteside Jim Greenwood : OGC 06-121r9, <i>OGC Web Service Common Implementation Specification</i>. <span>Open Geospatial Consortium</span> (2010). <a href="https://portal.ogc.org/files/?artifact_id=38867">https://portal.ogc.org/files/?artifact_id=38867</a></p>
+</div>
+      <div><a name="_terms_and_definitions" id="_terms_and_definitions"></a><h1>4.<span style="mso-tab-count:1">&#xA0; </span>Terms and definitions</h1><p class="MsoNormal"><a name="_7fe04b5b-db41-5d9b-ebe1-463b3a0c16c9" id="_7fe04b5b-db41-5d9b-ebe1-463b3a0c16c9"></a>This document uses the terms defined in <a href="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</a>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word &#x201C;shall&#x201D; (not &#x201C;must&#x201D;) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p><p class="MsoNormal"><a name="_e0235fe8-8273-26b4-faeb-a580ad58929f" id="_e0235fe8-8273-26b4-faeb-a580ad58929f"></a>This document also uses terms defined in the OGC Standard for Modular specifications (<a href="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</a>), also known as the &#x2018;ModSpec&#x2019;. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p><p class="MsoNormal"><a name="_1448dc16-8929-d666-6525-0249826c75e3" id="_1448dc16-8929-d666-6525-0249826c75e3"></a>For the purposes of this document, the following additional terms and definitions apply.</p><p class="MsoNormal"><a name="_a5c2011b-080b-de57-753c-94b804e5f324" id="_a5c2011b-080b-de57-753c-94b804e5f324"></a>This document uses the terms defined in Sub-clause 5.3 of <a href="#OGC06-121r9">[OGC06-121r9]</a>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word &#x201C;shall&#x201D; (not &#x201C;must&#x201D;) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.</p><p class="MsoNormal"><a name="_ccf3e63b-6acc-0cd0-687c-fd7f951288d6" id="_ccf3e63b-6acc-0cd0-687c-fd7f951288d6"></a>For the purposes of this document, the following additional terms and definitions apply.</p><p class="TermNum" style="text-align:left;"><a name="term-example-term" id="term-example-term"></a>4.1.&#xA0;<b>example term</b></p>
+<p class="MsoNormal"><a name="_06db0da1-214c-7f57-bd34-fd4f77edb6ed" id="_06db0da1-214c-7f57-bd34-fd4f77edb6ed"></a>term used for exemplary purposes</p>
+
+
+
+
+
+
+ <div class="Note" style="page-break-after:avoid;"><a name="_dba7a326-d460-4fd2-c200-c18e257c490b" id="_dba7a326-d460-4fd2-c200-c18e257c490b"></a><p class="Note">Note 1 to entry: An example note.</p></div><p class="SourceTitle" style="text-align:center;">Example </p><div class="example"><a name="_6e5e388f-3384-3fe0-1387-5c648e5561e6" id="_6e5e388f-3384-3fe0-1387-5c648e5561e6"></a><p class="example"><a name="_2d45db5a-97c4-2358-7890-3aa696c4b809" id="_2d45db5a-97c4-2358-7890-3aa696c4b809"></a>Here&#x2019;s an example of an example term.</p>
+</div><p class="MsoNormal">[<b>SOURCE:</b> <a href="#ISO19101-1">ISO 19101-1:2014</a>]</p></div>
       <div><a name="_conventions" id="_conventions"></a>
         <h1>5.<span style="mso-tab-count:1">&#xA0; </span>Conventions</h1>
-        <p class="MsoNormal"><a name="_155b235f-d02a-4be4-a568-73fe8e5f552b" id="_155b235f-d02a-4be4-a568-73fe8e5f552b"></a>This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
-        <div><a name="_identifiers" id="_identifiers"></a><h2>5.1.<span style="mso-tab-count:1">&#xA0; </span>Identifiers</h2><p class="MsoNormal"><a name="_228e350d-a61a-4626-9bab-a870a9c344b4" id="_228e350d-a61a-4626-9bab-a870a9c344b4"></a>The normative provisions in this standard are denoted by the URI</p>
-<p class="MsoNormal"><a name="_ef64d7c8-18cc-4b35-8864-0691319ce609" id="_ef64d7c8-18cc-4b35-8864-0691319ce609"></a>
-<tt>
-<a href="http://www.opengis.net/spec/{standard}/{m.n}">http://www.opengis.net/spec/{standard}/{m.n}</a>
-</tt>
-</p>
-<p class="MsoNormal"><a name="_4b83e8c0-04e8-4335-9a2a-17d09f15303b" id="_4b83e8c0-04e8-4335-9a2a-17d09f15303b"></a>All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.</p></div>
+        <p class="MsoNormal"><a name="_f287e0a4-ca0e-ef98-6e01-5d09472b62aa" id="_f287e0a4-ca0e-ef98-6e01-5d09472b62aa"></a>This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+        <div><a name="_identifiers" id="_identifiers"></a><h2>5.1.<span style="mso-tab-count:1">&#xA0; </span>Identifiers</h2>
+
+<p class="MsoNormal"><a name="_34025c5d-dda4-c61f-5774-94f51d938b80" id="_34025c5d-dda4-c61f-5774-94f51d938b80"></a>The normative provisions in this standard are denoted by the URI</p>
+
+<p class="MsoNormal"><a name="_f0191874-4eeb-2c92-18f2-f1367cf61a60" id="_f0191874-4eeb-2c92-18f2-f1367cf61a60"></a><tt><a href="http://www.opengis.net/spec/{standard}/{m.n}">http://www.opengis.net/spec/{standard}/{m.n}</a></tt></p>
+
+<p class="MsoNormal"><a name="_52250454-5ac3-4fce-7c83-eb454adf6103" id="_52250454-5ac3-4fce-7c83-eb454adf6103"></a>All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.</p>
+</div>
       </div>
       <div><a name="_clauses_not_containing_normative_material" id="_clauses_not_containing_normative_material"></a>
         <h1>6.<span style="mso-tab-count:1">&#xA0; </span>Clauses not Containing Normative Material</h1>
-        <p class="MsoNormal"><a name="_9f9aacb5-cbf5-437c-8e61-447a9773ae52" id="_9f9aacb5-cbf5-437c-8e61-447a9773ae52"></a>Paragraph</p>
+        <p class="MsoNormal"><a name="_6f5c8cdc-826f-564e-03f0-7b929261119c" id="_6f5c8cdc-826f-564e-03f0-7b929261119c"></a>Paragraph</p>
         <div><a name="_clauses_not_containing_normative_material_sub_clause_1" id="_clauses_not_containing_normative_material_sub_clause_1"></a><h2>6.1.<span style="mso-tab-count:1">&#xA0; </span>Clauses not containing normative material sub-clause 1</h2>
 
-<p class="MsoNormal"><a name="_83dc98af-c712-4507-9b5a-c4b231265ab8" id="_83dc98af-c712-4507-9b5a-c4b231265ab8"></a>Paragraph</p>
+<p class="MsoNormal"><a name="_99f22d46-0d65-7e82-4ecc-93498c6ea8b6" id="_99f22d46-0d65-7e82-4ecc-93498c6ea8b6"></a>Paragraph</p>
 </div>
         <div><a name="_clauses_not_containing_normative_material_sub_clause_2" id="_clauses_not_containing_normative_material_sub_clause_2"></a><h2>6.2.<span style="mso-tab-count:1">&#xA0; </span>Clauses not containing normative material sub-clause 2</h2>
 
@@ -2955,69 +2992,65 @@ Any one of the Distributed Computing Platform profiles specified in Annexes TBD 
       </div>
       <div><a name="_clause_containing_normative_material" id="_clause_containing_normative_material"></a>
         <h1>7.<span style="mso-tab-count:1">&#xA0; </span>Clause containing normative material</h1>
-        <p class="MsoNormal"><a name="_f4d5e68a-706c-4901-9ec7-51612d895e54" id="_f4d5e68a-706c-4901-9ec7-51612d895e54"></a>Paragraph</p>
-        <div><a name="_requirement_class_a_or_requirement_a_example" id="_requirement_class_a_or_requirement_a_example"></a><h2>7.1.<span style="mso-tab-count:1">&#xA0; </span>Requirement Class A or Requirement A Example</h2><p class="MsoNormal"><a name="_1e999747-c516-4e53-9391-60728fc52b87" id="_1e999747-c516-4e53-9391-60728fc52b87"></a>Paragraph &#x2013; intro text for the requirement class.</p>
-<p class="MsoNormal"><a name="_9fee66fc-5254-486d-ba6d-0d4f83ea215f" id="_9fee66fc-5254-486d-ba6d-0d4f83ea215f"></a>Use the following table for Requirements Classes.</p>
-<div align="center" class="table_container"><table class="recommendclass" style="border-collapse:collapse;border-spacing:0;"><a name="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a" id="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a"></a><thead><tr><th colspan="2" style="vertical-align:top;" class="recommend"><p class="RecommendationTitle">Requirement Class 1:</p></th></tr></thead><tbody><tr><td style="vertical-align:top;" class="recommend">Obligation</td><td style="vertical-align:top;" class="recommend">requirement</td></tr><tr><td colspan="2" style="vertical-align:top;" class="recommend"><p class="MsoNormal"><a name="_239ee35c-5248-4dd2-83c4-f4a53a710279" id="_239ee35c-5248-4dd2-83c4-f4a53a710279"></a>Requirements Class</p>
+        <p class="MsoNormal"><a name="_e346d47b-e37b-bad0-b7a8-85b3051c2c9a" id="_e346d47b-e37b-bad0-b7a8-85b3051c2c9a"></a>Paragraph</p>
+        <div><a name="_requirement_class_a_or_requirement_a_example" id="_requirement_class_a_or_requirement_a_example"></a><h2>7.1.<span style="mso-tab-count:1">&#xA0; </span>Requirement Class A or Requirement A Example</h2>
 
-<p style="mso-list:l3 level1 lfo4;" class="MsoListParagraphCxSpFirst">
+<p class="MsoNormal"><a name="_2571912e-e61e-678f-90b6-b6debf92814c" id="_2571912e-e61e-678f-90b6-b6debf92814c"></a>Paragraph &#x2013; intro text for the requirement class.</p>
 
-<a href="http://www.example.org/req/blah">http://www.example.org/req/blah</a>
+<p class="MsoNormal"><a name="_1ad1f3a4-290a-4b26-7f68-a63544f01832" id="_1ad1f3a4-290a-4b26-7f68-a63544f01832"></a>Use the following table for Requirements Classes.</p>
 
+<div align="center" class="table_container"><table class="recommendclass" style="border-collapse:collapse;border-spacing:0;"><a name="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a" id="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a"></a><thead><tr><th colspan="2" style="vertical-align:top;" class="recommend"><p class="RecommendationTitle">Requirements class 1</p></th></tr></thead><tbody><tr><td style="vertical-align:top;" class="recommend">Obligation</td><td style="vertical-align:top;" class="recommend">requirement</td></tr><tr><td colspan="2" style="vertical-align:top;" class="recommend"><p class="MsoNormal"><a name="_afbd9ff1-48f9-3d6b-bf2d-9cf250b73503" id="_afbd9ff1-48f9-3d6b-bf2d-9cf250b73503"></a>Requirements Class</p><p style="mso-list:l3 level1 lfo4;" class="MsoListParagraphCxSpFirst"><a href="http://www.example.org/req/blah">http://www.example.org/req/blah</a>
 </p>
-<p style="mso-list:l3 level1 lfo4;" class="MsoListParagraphCxSpLast">
-urn:iso:ts:iso:19139:clause:6
+<p style="mso-list:l3 level1 lfo4;" class="MsoListParagraphCxSpLast">urn:iso:ts:iso:19139:clause:6
 </p>
+</td></tr><tr><td style="vertical-align:top;" class="recommend"><p class="MsoNormal">Requirement 1-1</p></td><td style="vertical-align:top;" class="recommend"><p class="MsoNormal"><a name="_7a2c71c8-d37b-f492-f889-0f1d60baf760" id="_7a2c71c8-d37b-f492-f889-0f1d60baf760"></a>requirement description</p></td></tr><tr><td style="vertical-align:top;" class="recommend"><p class="MsoNormal">Requirement 1-2</p></td><td style="vertical-align:top;" class="recommend"><p class="MsoNormal"><a name="_ff73872a-fc0e-a168-12cb-9683da3d3174" id="_ff73872a-fc0e-a168-12cb-9683da3d3174"></a>requirement description</p></td></tr><tr><td style="vertical-align:top;" class="recommend"><p class="MsoNormal">Requirement 1-3</p></td><td style="vertical-align:top;" class="recommend"><p class="MsoNormal"><a name="_c46d3fec-4d21-69d8-2ef1-668132f04dac" id="_c46d3fec-4d21-69d8-2ef1-668132f04dac"></a>requirement description</p></td></tr></tbody></table></div>
 
-</td></tr><tr><td style="vertical-align:top;" class="recommend"><p class="MsoNormal">Requirement 1-1:</p></td><td style="vertical-align:top;" class="recommend">
-<p class="MsoNormal"><a name="_c62528e8-afb6-45e0-953d-9a0290449dda" id="_c62528e8-afb6-45e0-953d-9a0290449dda"></a>requirement description</p>
-</td></tr><tr><td style="vertical-align:top;" class="recommend"><p class="MsoNormal">Requirement 1-2:</p></td><td style="vertical-align:top;" class="recommend">
-<p class="MsoNormal"><a name="_320e89b6-98f0-44ca-8ca7-c71d5e66dc4f" id="_320e89b6-98f0-44ca-8ca7-c71d5e66dc4f"></a>requirement description</p>
-</td></tr><tr><td style="vertical-align:top;" class="recommend"><p class="MsoNormal">Requirement 1-3:</p></td><td style="vertical-align:top;" class="recommend">
-<p class="MsoNormal"><a name="_6d7d9ab7-2b24-4a57-8926-3d291894520c" id="_6d7d9ab7-2b24-4a57-8926-3d291894520c"></a>requirement description</p>
-</td></tr></tbody></table></div>
-<div><a name="_requirement_1" id="_requirement_1"></a><h3>7.1.1.<span style="mso-tab-count:1">&#xA0; </span>Requirement 1</h3><p class="MsoNormal"><a name="_544ca525-4e66-44cd-92d8-99dc510f9524" id="_544ca525-4e66-44cd-92d8-99dc510f9524"></a>Paragraph&#x2009;&#x2014;&#x2009;intro text for the requirement.</p>
-<p class="MsoNormal"><a name="_d7223a3c-5baa-45ec-bb8a-ff53714a3614" id="_d7223a3c-5baa-45ec-bb8a-ff53714a3614"></a>Use the following table for Requirements, number sequentially.</p>
-<div align="center" class="table_container"><table class="recommend" style="border-collapse:collapse;border-spacing:0;"><a name="_req_req-class-a_req-name-1" id="_req_req-class-a_req-name-1"></a><thead><tr style="background:#A5A5A5;"><th colspan="2" style="vertical-align:top;" class="recommend"><p class="RecommendationTitle">Requirement 1:</p></th></tr></thead><tbody><tr><td style="vertical-align:top;" class="recommend">Obligation</td><td style="vertical-align:top;" class="recommend">requirement</td></tr><tr style="background:#C9C9C9;"><td colspan="2" style="vertical-align:top;" class="recommend">
-<p class="MsoNormal"><a name="_c4bb9d57-0b3b-4377-b1fc-28c128222f56" id="_c4bb9d57-0b3b-4377-b1fc-28c128222f56"></a>Requirement &#x2018;shall&#x2019; statement</p>
-</td></tr></tbody></table></div>
-<p class="MsoNormal"><a name="_2a1bab20-f5a7-44bd-b015-a93cd9245238" id="_2a1bab20-f5a7-44bd-b015-a93cd9245238"></a>Dictionary tables for requirements can be added as necessary. Modify the following example as needed.</p>
-<p class="TableTitle" style="text-align:center;">Table 1</p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;" width="90%"><a name="_d91f86a1-5b81-4c65-b02b-a1598a156c2a" id="_d91f86a1-5b81-4c65-b02b-a1598a156c2a"></a><thead><tr><th valign="top" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Names</th><th valign="top" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Definition</th><th valign="top" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Data types and values</th><th valign="top" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Multiplicity and use</th></tr></thead><tbody><tr><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">name 1</td><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">definition of name 1</td><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">float</td><td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">One or more (mandatory)</td></tr><tr><td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">name 2</td><td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">definition of name 2</td><td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">character string type, not empty</td><td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">Zero or one (optional)</td></tr><tr><td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">name 3</td><td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">definition of name 3</td><td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">GML:: Point PropertyType</td><td valign="top" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">One (mandatory)</td></tr></tbody></table></div></div></div>
+<div><a name="_requirement_1" id="_requirement_1"></a><h3>7.1.1.<span style="mso-tab-count:1">&#xA0; </span>Requirement 1</h3>
+
+<p class="MsoNormal"><a name="_35d88c6d-ed1f-c0c3-fbe0-3dd618e05d35" id="_35d88c6d-ed1f-c0c3-fbe0-3dd618e05d35"></a>Paragraph&#x2009;&#x2014;&#x2009;intro text for the requirement.</p>
+
+<p class="MsoNormal"><a name="_2c02de4d-abb2-5df7-0c61-0835e9a24783" id="_2c02de4d-abb2-5df7-0c61-0835e9a24783"></a>Use the following table for Requirements, number sequentially.</p>
+
+<div align="center" class="table_container"><table class="recommend" style="border-collapse:collapse;border-spacing:0;"><a name="_req_req-class-a_req-name-1" id="_req_req-class-a_req-name-1"></a><thead><tr style="background:#A5A5A5;"><th colspan="2" style="vertical-align:top;" class="recommend"><p class="RecommendationTitle">Requirement 1</p></th></tr></thead><tbody><tr><td style="vertical-align:top;" class="recommend">Obligation</td><td style="vertical-align:top;" class="recommend">requirement</td></tr><tr style="background:#C9C9C9;"><td colspan="2" style="vertical-align:top;" class="recommend"><p class="MsoNormal"><a name="_cadb98b9-98d5-b57e-13a0-db23e990aa2e" id="_cadb98b9-98d5-b57e-13a0-db23e990aa2e"></a>Requirement &#x2018;shall&#x2019; statement</p></td></tr></tbody></table></div>
+
+<p class="MsoNormal"><a name="_baaad289-dde8-9a33-ec20-b6e0292b27b2" id="_baaad289-dde8-9a33-ec20-b6e0292b27b2"></a>Dictionary tables for requirements can be added as necessary. Modify the following example as needed.</p>
+
+<p class="TableTitle" style="text-align:center;">Table 1</p><div align="center" class="table_container"><table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;" width="90%"><a name="_baffd499-ce22-93c1-8644-ba20e774b820" id="_baffd499-ce22-93c1-8644-ba20e774b820"></a><thead><tr><th valign="middle" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Names</th><th valign="middle" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Definition</th><th valign="middle" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Data types and values</th><th valign="middle" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Multiplicity and use</th></tr></thead><tbody><tr><td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">name 1</td><td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">definition of name 1</td><td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">float</td><td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">One or more (mandatory)</td></tr><tr><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">name 2</td><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">definition of name 2</td><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">character string type, not empty</td><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.0pt;mso-border-bottom-alt:solid windowtext 1.0pt;">Zero or one (optional)</td></tr><tr><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">name 3</td><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">definition of name 3</td><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">GML:: Point PropertyType</td><td valign="middle" align="left" style="border-top:none;mso-border-top-alt:none;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">One (mandatory)</td></tr></tbody></table></div>
+</div>
+</div>
       </div>
       <div><a name="_media_types_for_any_data_encodings" id="_media_types_for_any_data_encodings"></a>
         <h1>8.<span style="mso-tab-count:1">&#xA0; </span>Media Types for any data encoding(s)</h1>
-        <p class="MsoNormal"><a name="_8e728a18-15fa-449f-b0cb-2db6c3785cf0" id="_8e728a18-15fa-449f-b0cb-2db6c3785cf0"></a>A section describing the MIME-types to be used is mandatory for any standard involving data encodings. If no suitable MIME type exists in <a href="http://www.iana.org/assignments/media-types/index.html">http://www.iana.org/assignments/media-types/index.html</a> then this section may be used to define a new MIME type for registration with IANA.</p>
+        <p class="MsoNormal"><a name="_9edcb2e8-b4ab-3495-e76a-87c21ea5743d" id="_9edcb2e8-b4ab-3495-e76a-87c21ea5743d"></a>A section describing the MIME-types to be used is mandatory for any standard involving data encodings. If no suitable MIME type exists in <a href="http://www.iana.org/assignments/media-types/index.html">http://www.iana.org/assignments/media-types/index.html</a> then this section may be used to define a new MIME type for registration with IANA.</p>
       </div>
       <p class="MsoNormal">
         <br clear="all" style="mso-special-character:line-break;page-break-before:always"/>
       </p>
       <div class="Section3"><a name="_conformance_class_abstract_test_suite_normative" id="_conformance_class_abstract_test_suite_normative"></a>
-        <h1 class="Annex"><b>Annex A</b><br/>(normative)<br/><b>Conformance Class Abstract Test Suite (Normative)</b></h1>
-        <div class="Note"><a name="_99edd996-c2f6-40a8-84fc-f5d42ac3eb02" id="_99edd996-c2f6-40a8-84fc-f5d42ac3eb02"></a>
+        <h1 class="Annex"><b>Annex A</b><br/>(informative)<br/><b>Conformance Class Abstract Test Suite (Normative)</b></h1>
+        <div class="Note"><a name="_49fa4119-ff23-ba00-2b10-7c6008e83cc9" id="_49fa4119-ff23-ba00-2b10-7c6008e83cc9"></a>
           <p class="Note"><span class="note_label">NOTE</span><span style="mso-tab-count:1">&#xA0; </span>Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)</p>
         </div>
-        <div><a name="_conformance_class_a" id="_conformance_class_a"></a><h2>A.1.<span style="mso-tab-count:1">&#xA0; </span>Conformance Class A</h2><div><a name="_requirement_1_2" id="_requirement_1_2"></a><h3>A.1.1.<span style="mso-tab-count:1">&#xA0; </span>Requirement 1</h3>
+        <div><a name="_conformance_class_a" id="_conformance_class_a"></a><h2>A.1.<span style="mso-tab-count:1">&#xA0; </span>Conformance Class A</h2>
 
-<div align="center" class="table_container"><table class="recommend" style="border-collapse:collapse;border-spacing:0;"><a name="_6a79d959-c40f-429a-9262-859a0d195379" id="_6a79d959-c40f-429a-9262-859a0d195379"></a><thead><tr style="background:#A5A5A5;"><th colspan="2" style="vertical-align:top;" class="recommend"><p class="RecommendationTitle">Requirement A.1:</p></th></tr></thead><tbody><tr><td colspan="2" style="vertical-align:top;" class="recommend"><p class="MsoNormal">/req/req-class-a/req-name-1</p></td></tr><tr style="background:#C9C9C9;"><td colspan="2" style="vertical-align:top;" class="recommend">
-<p class="SourceTitle" style="text-align:center;">Example </p><div class="example"><a name="_5da4b62d-938b-4982-bf08-e783cc50a5f6" id="_5da4b62d-938b-4982-bf08-e783cc50a5f6"></a>
+<div><a name="_requirement_1_2" id="_requirement_1_2"></a><h3>A.1.1.<span style="mso-tab-count:1">&#xA0; </span>Requirement 1</h3>
 
+<div align="center" class="table_container"><table class="recommend" style="border-collapse:collapse;border-spacing:0;"><a name="_5bbb472c-11f6-71bb-e0cb-984db40069de" id="_5bbb472c-11f6-71bb-e0cb-984db40069de"></a><thead><tr style="background:#A5A5A5;"><th colspan="2" style="vertical-align:top;" class="recommend"><p class="RecommendationTitle">Requirement A.1</p></th></tr></thead><tbody><tr><td colspan="2" style="vertical-align:top;" class="recommend"><p class="MsoNormal">/req/req-class-a/req-name-1</p></td></tr><tr style="background:#C9C9C9;"><td style="vertical-align:top;" class="recommend">Test purpose</td><td style="vertical-align:top;" class="recommend"><p class="MsoNormal"><a name="_d47d8426-5d28-1c1c-2ac5-d2cb76633cdb" id="_d47d8426-5d28-1c1c-2ac5-d2cb76633cdb"></a>Verify that&#x2026;&#x200B;</p>
+</td></tr><tr><td style="vertical-align:top;" class="recommend">Test method</td><td style="vertical-align:top;" class="recommend"><p class="MsoNormal"><a name="_82b50db0-7bcd-8066-e386-e61f2727f4c2" id="_82b50db0-7bcd-8066-e386-e61f2727f4c2"></a>Inspect&#x2026;&#x200B;</p>
+</td></tr></tbody></table></div>
 </div>
-</td></tr></tbody></table><table class="dl"><tr><td valign="top" align="left"><p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">Test purpose</p></td><td valign="top">
-<p class="MsoNormal"><a name="_b2e0fee6-ec9b-4aa2-88be-8f7c517c53b3" id="_b2e0fee6-ec9b-4aa2-88be-8f7c517c53b3"></a>Verify that&#x2026;&#x200B;</p>
-</td></tr><tr><td valign="top" align="left"><p align="left" style="margin-left:0pt;text-align:left;" class="MsoNormal">Test method</p></td><td valign="top">
-<p class="MsoNormal"><a name="_50157140-6663-4fbe-b76a-937b8505ca45" id="_50157140-6663-4fbe-b76a-937b8505ca45"></a>Inspect&#x2026;&#x200B;</p>
-</td></tr></table></div>
-</div>
+
 <div><a name="_requirement_2" id="_requirement_2"></a><h3>A.1.2.<span style="mso-tab-count:1">&#xA0; </span>Requirement 2</h3>
 
-</div></div>
+</div>
+</div>
       </div>
       <p class="MsoNormal">
         <br clear="all" style="mso-special-character:line-break;page-break-before:always"/>
       </p>
       <div class="Section3"><a name="_title" id="_title"></a>
         <h1 class="Annex"><b>Annex B</b><br/>(informative)<br/><b>Title</b></h1>
-        <div class="Note"><a name="_b2398c66-df5e-4cc6-bad8-8dfbab32eab4" id="_b2398c66-df5e-4cc6-bad8-8dfbab32eab4"></a>
+        <div class="Note"><a name="_9c04cf83-97ee-5129-1540-d560e28d0909" id="_9c04cf83-97ee-5129-1540-d560e28d0909"></a>
           <p class="Note"><span class="note_label">NOTE</span><span style="mso-tab-count:1">&#xA0; </span>Place other Annex material in sequential annexes beginning with &#x201C;B&#x201D; and leave final two annexes for the Revision History and Bibliography</p>
         </div>
       </div>
@@ -3025,26 +3058,26 @@ urn:iso:ts:iso:19139:clause:6
         <br clear="all" style="mso-special-character:line-break;page-break-before:always"/>
       </p>
       <div class="Section3"><a name="_revision_history" id="_revision_history"></a>
-        <h1 class="Annex"><b>Annex C</b><br/>(normative)<br/><b>Revision History</b></h1>
+        <h1 class="Annex"><b>Annex C</b><br/>(informative)<br/><b>Revision History</b></h1>
         <p class="TableTitle" style="text-align:center;">Table C.1</p>
         <div align="center" class="table_container">
-          <table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;" width="90%"><a name="_3da0e552-7581-46e3-b58c-55dc89eb6299" id="_3da0e552-7581-46e3-b58c-55dc89eb6299"></a>
+          <table class="MsoISOTable" style="mso-table-anchor-horizontal:column;mso-table-overlap:never;border-spacing:0;border-width:1px;" width="90%"><a name="_b491561e-0766-3f3b-04d6-56fc96fed3e2" id="_b491561e-0766-3f3b-04d6-56fc96fed3e2"></a>
             <thead>
               <tr>
-                <th valign="top" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Date</th>
-                <th valign="top" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Release</th>
-                <th valign="top" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Editor</th>
-                <th valign="top" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Primary clauses modified</th>
-                <th valign="top" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Description</th>
+                <th valign="middle" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Date</th>
+                <th valign="middle" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Release</th>
+                <th valign="middle" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Editor</th>
+                <th valign="middle" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Primary clauses modified</th>
+                <th valign="middle" align="left" style="font-weight:bold;border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Description</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">2016-04-28</td>
-                <td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">0.1</td>
-                <td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">G. Editor</td>
-                <td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">all</td>
-                <td valign="top" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">initial version</td>
+                <td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">2021-05-17</td>
+                <td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">0.1</td>
+                <td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">Matthew Purss</td>
+                <td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">all</td>
+                <td valign="middle" align="left" style="border-top:solid windowtext 1.5pt;mso-border-top-alt:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;mso-border-bottom-alt:solid windowtext 1.5pt;">initial version</td>
               </tr>
             </tbody>
           </table>
@@ -3053,25 +3086,29 @@ urn:iso:ts:iso:19139:clause:6
       <p class="MsoNormal">
         <br clear="all" style="mso-special-character:line-break;page-break-before:always"/>
       </p>
-      <div><h1 class="Section3">Bibliography</h1><div class="Note"><a name="_1a496e00-39a6-4231-9a8a-5a4caa762937" id="_1a496e00-39a6-4231-9a8a-5a4caa762937"></a><p class="Note"><span class="note_label">NOTE</span><span style="mso-tab-count:1">&#xA0; </span>The TC has approved Springer LNCS as the official document citation type.</p><p class="Note"><a name="_87b2d18e-f634-4dce-b985-df5980d9ab3f" id="_87b2d18e-f634-4dce-b985-df5980d9ab3f"></a>Springer LNCS is widely used in technical and computer science journals and other publications</p><p class="Note"><a name="_1f7e5246-a1fa-470f-b600-f8dc3153a4f5" id="_1f7e5246-a1fa-470f-b600-f8dc3153a4f5"></a>&#x2013; Actual References:</p><p class="Note"><a name="_29b4540f-ac5d-412d-aff3-3f5453558d5b" id="_29b4540f-ac5d-412d-aff3-3f5453558d5b"></a>[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p><p class="Note"><a name="_a8dc51b0-5fb0-484b-b13e-40ab29020685" id="_a8dc51b0-5fb0-484b-b13e-40ab29020685"></a>[n] Web: Author Surname, A.: Title, <a href="http://Website-Url">http://Website-Url</a></p></div><p class="Biblio"><a name="OGC2015" id="OGC2015"></a>[1]<span style="mso-tab-count:1">&#xA0; </span><i>OGC: OGC Testbed 12 Annex B: Architecture</i> (2015).</p>
+      <div><h1 class="Section3">Bibliography</h1>
+
+<div class="Note"><a name="_8c451949-eee2-e761-309f-530ec0fefcea" id="_8c451949-eee2-e761-309f-530ec0fefcea"></a><p class="Note"><span class="note_label">NOTE</span><span style="mso-tab-count:1">&#xA0; </span>The TC has approved Springer LNCS as the official document citation type.</p><p class="Note"><a name="_4b95e711-c35f-134f-4850-3e819a15ddb0" id="_4b95e711-c35f-134f-4850-3e819a15ddb0"></a>Springer LNCS is widely used in technical and computer science journals and other publications</p><p class="Note"><a name="_91991dd8-2854-d4d4-c3b7-71e34448cc8e" id="_91991dd8-2854-d4d4-c3b7-71e34448cc8e"></a>&#x2013; Actual References:</p><p class="Note"><a name="_a19eddb1-f343-b2d8-fb7c-28a962268999" id="_a19eddb1-f343-b2d8-fb7c-28a962268999"></a>[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p><p class="Note"><a name="_7793dbd3-cc06-ae69-4dea-78cf8d0d86c2" id="_7793dbd3-cc06-ae69-4dea-78cf8d0d86c2"></a>[n] Web: Author Surname, A.: Title, <a href="http://Website-Url">http://Website-Url</a></p></div><p class="Biblio"><a name="OGC2015" id="OGC2015"></a>[1]<span style="mso-tab-count:1">&#xA0; </span><i>OGC: OGC Testbed 12 Annex B: Architecture</i> (2015).</p>
+
+
 </div>
     </div>
   <div style="mso-element:footnote-list"/></body>
 </html>
 
 
-------=_NextPart_58ebcba7.a27f.4df4
+------=_NextPart_e3444dc3.9a6a.4c5b
 Content-ID: <filelist.xml>
 Content-Disposition: inline; filename="filelist.xml"
 Content-Transfer-Encoding: base64
 Content-Type: application/xml
 
 PHhtbCB4bWxuczpvPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOm9mZmljZTpvZmZpY2UiPgog
-ICAgICAgIDxvOk1haW5GaWxlIEhSZWY9Ii4uLzIxXzAzOF9PR0NfQVBJX0RHR1NfUGFydF8xL2Rv
-Y3VtZW50Lmh0bSIvPiAgPG86RmlsZSBIUmVmPSJmaWxlbGlzdC54bWwiLz4KICA8bzpGaWxlIEhS
-ZWY9ImhlYWRlci5odG1sIi8+CjwveG1sPgo=
+ICAgICAgIDxvOk1haW5GaWxlIEhSZWY9Ii4uLy9tZXRhbm9ybWEvZG9jdW1lbnQuaHRtIi8+ICA8
+bzpGaWxlIEhSZWY9ImZpbGVsaXN0LnhtbCIvPgogIDxvOkZpbGUgSFJlZj0iaGVhZGVyLmh0bWwi
+Lz4KPC94bWw+Cg==
 
-------=_NextPart_58ebcba7.a27f.4df4
+------=_NextPart_e3444dc3.9a6a.4c5b
 Content-ID: <header.html>
 Content-Disposition: inline; filename="header.html"
 Content-Transfer-Encoding: base64
@@ -3087,173 +3124,44 @@ IGNvbnRlbnQ9IiI+DQo8bWV0YSBodHRwLWVxdWl2PUNvbnRlbnQtVHlwZSBjb250ZW50PSJ0ZXh0
 L2h0bWw7IGNoYXJzZXQ9dXRmLTgiPg0KPG1ldGEgbmFtZT1Qcm9nSWQgY29udGVudD1Xb3JkLkRv
 Y3VtZW50Pg0KPG1ldGEgbmFtZT1HZW5lcmF0b3IgY29udGVudD0iTWljcm9zb2Z0IFdvcmQgMTUi
 Pg0KPG1ldGEgbmFtZT1PcmlnaW5hdG9yIGNvbnRlbnQ9Ik1pY3Jvc29mdCBXb3JkIDE1Ij4NCjxs
-aW5rIGlkPU1haW4tRmlsZSByZWw9TWFpbi1GaWxlIGhyZWY9Ii4uLzIxXzAzOF9PR0NfQVBJX0RH
-R1NfUGFydF8xL2RvY3VtZW50Lmh0bWwiPg0KPCEtLVtpZiBndGUgbXNvIDldPjx4bWw+DQogPG86
-c2hhcGVkZWZhdWx0cyB2OmV4dD0iZWRpdCIgc3BpZG1heD0iMjA0OSIvPg0KPC94bWw+PCFbZW5k
-aWZdLS0+DQo8L2hlYWQ+DQoNCjxib2R5IGxhbmc9RU4gbGluaz1ibHVlIHZsaW5rPSIjOTU0Rjcy
-Ij4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdG5vdGUtc2VwYXJhdG9yJyBpZD1mcz4N
-Cg0KPHAgY2xhc3M9TXNvTm9ybWFsIHN0eWxlPSdtYXJnaW4tYm90dG9tOjBjbTttYXJnaW4tYm90
-dG9tOi4wMDAxcHQ7bGluZS1oZWlnaHQ6DQpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4g
-c3R5bGU9J21zby1zcGVjaWFsLWNoYXJhY3Rlcjpmb290bm90ZS1zZXBhcmF0b3InPjwhW2lmICFz
-dXBwb3J0Rm9vdG5vdGVzXT4NCg0KPGhyIGFsaWduPWxlZnQgc2l6ZT0xIHdpZHRoPSIzMyUiPg0K
-DQo8IVtlbmRpZl0+PC9zcGFuPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdt
-c28tZWxlbWVudDpmb290bm90ZS1jb250aW51YXRpb24tc2VwYXJhdG9yJyBpZD1mY3M+DQoNCjxw
-IGNsYXNzPU1zb05vcm1hbCBzdHlsZT0nbWFyZ2luLWJvdHRvbTowY207bWFyZ2luLWJvdHRvbTou
-MDAwMXB0O2xpbmUtaGVpZ2h0Og0Kbm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCPjxzcGFuIHN0eWxl
-PSdtc28tc3BlY2lhbC1jaGFyYWN0ZXI6Zm9vdG5vdGUtY29udGludWF0aW9uLXNlcGFyYXRvcic+
-PCFbaWYgIXN1cHBvcnRGb290bm90ZXNdPg0KDQo8aHIgYWxpZ249bGVmdCBzaXplPTE+DQoNCjwh
-W2VuZGlmXT48L3NwYW4+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1l
-bGVtZW50OmVuZG5vdGUtc2VwYXJhdG9yJyBpZD1lcz4NCg0KPHAgY2xhc3M9TXNvTm9ybWFsIHN0
-eWxlPSdtYXJnaW4tYm90dG9tOjBjbTttYXJnaW4tYm90dG9tOi4wMDAxcHQ7bGluZS1oZWlnaHQ6
-DQpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4gc3R5bGU9J21zby1zcGVjaWFsLWNoYXJh
-Y3Rlcjpmb290bm90ZS1zZXBhcmF0b3InPjwhW2lmICFzdXBwb3J0Rm9vdG5vdGVzXT4NCg0KPGhy
-IGFsaWduPWxlZnQgc2l6ZT0xIHdpZHRoPSIzMyUiPg0KDQo8IVtlbmRpZl0+PC9zcGFuPjwvc3Bh
-bj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDplbmRub3RlLWNvbnRp
-bnVhdGlvbi1zZXBhcmF0b3InIGlkPWVjcz4NCg0KPHAgY2xhc3M9TXNvTm9ybWFsIHN0eWxlPSdt
-YXJnaW4tYm90dG9tOjBjbTttYXJnaW4tYm90dG9tOi4wMDAxcHQ7bGluZS1oZWlnaHQ6DQpub3Jt
-YWwnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4gc3R5bGU9J21zby1zcGVjaWFsLWNoYXJhY3Rlcjpm
-b290bm90ZS1jb250aW51YXRpb24tc2VwYXJhdG9yJz48IVtpZiAhc3VwcG9ydEZvb3Rub3Rlc10+
-DQoNCjxociBhbGlnbj1sZWZ0IHNpemU9MT4NCg0KPCFbZW5kaWZdPjwvc3Bhbj48L3NwYW4+PC9w
-Pg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6aGVhZGVyJyBpZD1laDE+DQoN
-CjxwIGNsYXNzPU1zb0hlYWRlciBhbGlnbj1sZWZ0IHN0eWxlPSd0ZXh0LWFsaWduOmxlZnQ7bGlu
-ZS1oZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFu
-Zz1FTi1HQj5PcGVuIEdlb3NwYXRpYWwgQ29uc29ydGl1bSZuYnNwOzIxLTAzODwvc3Bhbj48L3A+
-DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpoZWFkZXInIGlkPWgxPg0KDQo8
-cCBjbGFzcz1Nc29IZWFkZXIgc3R5bGU9J21hcmdpbi1ib3R0b206MTguMHB0Jz48c3BhbiBsYW5n
-PUVOLUdCDQpzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0
-O2ZvbnQtd2VpZ2h0Om5vcm1hbCc+DQpPcGVuIEdlb3NwYXRpYWwgQ29uc29ydGl1bSZuYnNwOzIx
-LTAzODwvc3Bhbj48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC13ZWlnaHQ6bm9ybWFsJz48
-bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVu
-dDpmb290ZXInIGlkPWVmMT4NCg0KPHAgY2xhc3M9TXNvRm9vdGVyIHN0eWxlPSdtYXJnaW4tdG9w
-OjEyLjBwdDtsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVpZ2h0LXJ1bGU6DQpleGFjdGx5
-Jz48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxiIHN0eWxlPSdtc28tYmlkaS1mb250LXdlaWdodDpu
-b3JtYWwnPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRp
-LWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4n
-Pjwvc3Bhbj48c3Bhbg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgPC9zcGFuPlBBR0U8c3Bh
-biBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqDCoA0KPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxz
-cGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PC9i
-PjwhW2VuZGlmXS0tPjxiDQpzdHlsZT0nbXNvLWJpZGktZm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bh
-biBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0Ow0KbXNvLWJpZGktZm9udC1zaXpl
-OjExLjBwdCc+PHNwYW4gc3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPjI8L3NwYW4+PC9zcGFuPjwv
-Yj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxiDQpzdHlsZT0nbXNvLWJpZGktZm9udC13ZWlnaHQ6
-bm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0Ow0KbXNvLWJp
-ZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+
-PC9zcGFuPjwvc3Bhbj48L2I+PCFbZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2Zv
-bnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdt
-c28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqAgPC9zcGFuPsKpIE9wZW4gR2Vvc3BhdGlhbCBDb25zb3J0aXVtJm5ic3A7
-MjAyMSDigJMgQWxsIHJpZ2h0cyByZXNlcnZlZDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCg0KPC9k
-aXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9ZWgyPg0KPHAgY2xhc3M9
-TXNvSGVhZGVyIGFsaWduPWxlZnQgc3R5bGU9J3RleHQtYWxpZ246bGVmdDtsaW5lLWhlaWdodDox
-Mi4wcHQ7DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPk9w
-ZW4gR2Vvc3BhdGlhbCBDb25zb3J0aXVtJm5ic3A7MjEtMDM4PC9zcGFuPjwvcD4NCjwvZGl2Pg0K
-DQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpoZWFkZXInIGlkPWVoMmw+DQo8cCBjbGFzcz1Nc29I
-ZWFkZXJMYW5kc2NhcGUgYWxpZ249bGVmdCBzdHlsZT0ndGV4dC1hbGlnbjpsZWZ0O2xpbmUtaGVp
-Z2h0OjEyLjBwdDsNCm1zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4t
-R0I+T3BlbiBHZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsyMS0wMzg8L3NwYW4+PC9wPg0KPC9k
-aXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9aDI+DQo8cCBjbGFzcz1N
-c29IZWFkZXIgYWxpZ249cmlnaHQgc3R5bGU9J3RleHQtYWxpZ246cmlnaHQ7bGluZS1oZWlnaHQ6
-MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1HQj5P
-cGVuIEdlb3NwYXRpYWwgQ29uc29ydGl1bSZuYnNwOzIxLTAzODwvc3Bhbj48L3A+DQo8L2Rpdj4N
-Cg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6aGVhZGVyJyBpZD1oMmw+DQo8cCBjbGFzcz1Nc29I
-ZWFkZXJMYW5kc2NhcGUgYWxpZ249cmlnaHQgc3R5bGU9J3RleHQtYWxpZ246cmlnaHQ7bGluZS1o
-ZWlnaHQ6MTIuMHB0Ow0KbXNvLWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1F
-Ti1HQj5PcGVuIEdlb3NwYXRpYWwgQ29uc29ydGl1bSZuYnNwOzIxLTAzODwvc3Bhbj48L3A+DQo8
-L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1lZjI+DQo8cCBjbGFz
-cz1Nc29Gb290ZXIgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdDttc28tbGluZS1oZWlnaHQtcnVs
-ZTpleGFjdGx5Jz48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxl
-PSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHls
-ZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj48c3Bhbg0Kc3R5bGU9J21zby1zcGFj
-ZXJ1bjp5ZXMnPsKgPC9zcGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqDC
-oA0KPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1z
-ZXBhcmF0b3InPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5
-bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0
-eWxlPSdtc28tbm8tcHJvb2Y6eWVzJz5paTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0Rmll
-bGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1m
-b250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9z
-cGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC1zaXpl
-OjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiANCnN0eWxlPSdtc28tdGFi
-LWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqAgPC9zcGFuPsKpIE9wZW4gR2Vvc3BhdGlhbCBDb25zb3J0aXVtJm5ic3A7MjAyMSZu
-YnNwO+KAkyBBbGwgcmlnaHRzIHJlc2VydmVkPG86cD48L286cD48L3NwYW4+PC9wPg0KDQo8L2Rp
-dj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1lZjJsPg0KPHAgY2xhc3M9
-TXNvRm9vdGVyTGFuZHNjYXBlIHN0eWxlPSdsaW5lLWhlaWdodDoxMi4wcHQ7bXNvLWxpbmUtaGVp
-Z2h0LXJ1bGU6ZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1H
-QiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3Bh
-bg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+PHNwYW4NCnN0eWxlPSdt
-c28tc3BhY2VydW46eWVzJz7CoDwvc3Bhbj5QQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5
-ZXMnPsKgwqANCjwvc3Bhbj5cKiBNRVJHRUZPUk1BVCA8c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6
-ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVO
-LUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxz
-cGFuDQpzdHlsZT0nbXNvLW5vLXByb29mOnllcyc+aWk8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3Vw
-cG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNv
-LWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1l
-bmQnPjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4gbGFuZz1FTi1HQg0Kc3R5bGU9J2Zv
-bnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4gDQpzdHlsZT0n
-bXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj7CqSBPcGVuIEdlb3NwYXRpYWwgQ29uc29ydGl1bSZuYnNw
-OzIwMjEmbmJzcDvigJMgQWxsIHJpZ2h0cyByZXNlcnZlZDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4N
-Cg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZjI+DQo8cCBj
-bGFzcz1Nc29Gb290ZXIgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdCc+PHNwYW4gbGFuZz1FTi1H
-Qg0Kc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+wqkg
-T3BlbiBHZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsyMDIxJm5ic3A74oCTIEFsbA0KcmlnaHRz
-IHJlc2VydmVkPHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPjwvc3Bhbj48IS0tW2lm
-IHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0
-O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6Zmll
-bGQtYmVnaW4nPjwvc3Bhbj4gUEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoMKg
-DQo8L3NwYW4+XCogTUVSR0VGT1JNQVQgPHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNl
-cGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBzdHls
-ZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5
-bGU9J21zby1uby1wcm9vZjp5ZXMnPmlpaTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0Rmll
-bGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1m
-b250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9z
-cGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC1zaXpl
-OjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48bzpwPjwvbzpwPjwvc3Bhbj48L3A+
-DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1mMmw+DQo8cCBj
-bGFzcz1Nc29Gb290ZXJMYW5kc2NhcGUgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdCc+PHNwYW4g
-bGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjEx
-LjBwdCc+wqkgT3BlbiBHZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsyMDIxJm5ic3A74oCTIEFs
-bA0KcmlnaHRzIHJlc2VydmVkPHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPjwvc3Bh
-bj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNp
-emU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLWVs
-ZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj4gUEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46
-eWVzJz7CoMKgDQo8L3NwYW4+XCogTUVSR0VGT1JNQVQgPHNwYW4gc3R5bGU9J21zby1lbGVtZW50
-OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1F
-Ti1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48
-c3Bhbg0Kc3R5bGU9J21zby1uby1wcm9vZjp5ZXMnPmlpaTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBz
-dXBwb3J0RmllbGRzXT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDtt
-c28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxk
-LWVuZCc+PC9zcGFuPjwvc3Bhbj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0n
-Zm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48bzpwPjwvbzpwPjwv
-c3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1l
-ZjM+DQo8cCBjbGFzcz1Nc29Gb290ZXIgc3R5bGU9J21hcmdpbi10b3A6MTIuMHB0O2xpbmUtaGVp
+aW5rIGlkPU1haW4tRmlsZSByZWw9TWFpbi1GaWxlIGhyZWY9Ii4uLy9tZXRhbm9ybWEvZG9jdW1l
+bnQuaHRtbCI+DQo8IS0tW2lmIGd0ZSBtc28gOV0+PHhtbD4NCiA8bzpzaGFwZWRlZmF1bHRzIHY6
+ZXh0PSJlZGl0IiBzcGlkbWF4PSIyMDQ5Ii8+DQo8L3htbD48IVtlbmRpZl0tLT4NCjwvaGVhZD4N
+Cg0KPGJvZHkgbGFuZz1FTiBsaW5rPWJsdWUgdmxpbms9IiM5NTRGNzIiPg0KDQo8ZGl2IHN0eWxl
+PSdtc28tZWxlbWVudDpmb290bm90ZS1zZXBhcmF0b3InIGlkPWZzPg0KDQo8cCBjbGFzcz1Nc29O
+b3JtYWwgc3R5bGU9J21hcmdpbi1ib3R0b206MGNtO21hcmdpbi1ib3R0b206LjAwMDFwdDtsaW5l
+LWhlaWdodDoNCm5vcm1hbCc+PHNwYW4gbGFuZz1FTi1HQj48c3BhbiBzdHlsZT0nbXNvLXNwZWNp
+YWwtY2hhcmFjdGVyOmZvb3Rub3RlLXNlcGFyYXRvcic+PCFbaWYgIXN1cHBvcnRGb290bm90ZXNd
+Pg0KDQo8aHIgYWxpZ249bGVmdCBzaXplPTEgd2lkdGg9IjMzJSI+DQoNCjwhW2VuZGlmXT48L3Nw
+YW4+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3Ru
+b3RlLWNvbnRpbnVhdGlvbi1zZXBhcmF0b3InIGlkPWZjcz4NCg0KPHAgY2xhc3M9TXNvTm9ybWFs
+IHN0eWxlPSdtYXJnaW4tYm90dG9tOjBjbTttYXJnaW4tYm90dG9tOi4wMDAxcHQ7bGluZS1oZWln
+aHQ6DQpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0I+PHNwYW4gc3R5bGU9J21zby1zcGVjaWFsLWNo
+YXJhY3Rlcjpmb290bm90ZS1jb250aW51YXRpb24tc2VwYXJhdG9yJz48IVtpZiAhc3VwcG9ydEZv
+b3Rub3Rlc10+DQoNCjxociBhbGlnbj1sZWZ0IHNpemU9MT4NCg0KPCFbZW5kaWZdPjwvc3Bhbj48
+L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZW5kbm90ZS1z
+ZXBhcmF0b3InIGlkPWVzPg0KDQo8cCBjbGFzcz1Nc29Ob3JtYWwgc3R5bGU9J21hcmdpbi1ib3R0
+b206MGNtO21hcmdpbi1ib3R0b206LjAwMDFwdDtsaW5lLWhlaWdodDoNCm5vcm1hbCc+PHNwYW4g
+bGFuZz1FTi1HQj48c3BhbiBzdHlsZT0nbXNvLXNwZWNpYWwtY2hhcmFjdGVyOmZvb3Rub3RlLXNl
+cGFyYXRvcic+PCFbaWYgIXN1cHBvcnRGb290bm90ZXNdPg0KDQo8aHIgYWxpZ249bGVmdCBzaXpl
+PTEgd2lkdGg9IjMzJSI+DQoNCjwhW2VuZGlmXT48L3NwYW4+PC9zcGFuPjwvcD4NCg0KPC9kaXY+
+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmVuZG5vdGUtY29udGludWF0aW9uLXNlcGFyYXRv
+cicgaWQ9ZWNzPg0KDQo8cCBjbGFzcz1Nc29Ob3JtYWwgc3R5bGU9J21hcmdpbi1ib3R0b206MGNt
+O21hcmdpbi1ib3R0b206LjAwMDFwdDtsaW5lLWhlaWdodDoNCm5vcm1hbCc+PHNwYW4gbGFuZz1F
+Ti1HQj48c3BhbiBzdHlsZT0nbXNvLXNwZWNpYWwtY2hhcmFjdGVyOmZvb3Rub3RlLWNvbnRpbnVh
+dGlvbi1zZXBhcmF0b3InPjwhW2lmICFzdXBwb3J0Rm9vdG5vdGVzXT4NCg0KPGhyIGFsaWduPWxl
+ZnQgc2l6ZT0xPg0KDQo8IVtlbmRpZl0+PC9zcGFuPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8
+ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpoZWFkZXInIGlkPWVoMT4NCg0KPHAgY2xhc3M9TXNvSGVh
+ZGVyIGFsaWduPWxlZnQgc3R5bGU9J3RleHQtYWxpZ246bGVmdDtsaW5lLWhlaWdodDoxMi4wcHQ7
+DQptc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPk9wZW4gR2Vv
+c3BhdGlhbCBDb25zb3J0aXVtJm5ic3A7MjEtMDM4PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxk
+aXYgc3R5bGU9J21zby1lbGVtZW50OmhlYWRlcicgaWQ9aDE+DQoNCjxwIGNsYXNzPU1zb0hlYWRl
+ciBzdHlsZT0nbWFyZ2luLWJvdHRvbToxOC4wcHQnPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdm
+b250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQ7Zm9udC13ZWlnaHQ6bm9y
+bWFsJz4NCk9wZW4gR2Vvc3BhdGlhbCBDb25zb3J0aXVtJm5ic3A7MjEtMDM4PC9zcGFuPjxzcGFu
+IGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXdlaWdodDpub3JtYWwnPjxvOnA+PC9vOnA+PC9zcGFu
+PjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9ZWYx
+Pg0KDQo8cCBjbGFzcz1Nc29Gb290ZXIgc3R5bGU9J21hcmdpbi10b3A6MTIuMHB0O2xpbmUtaGVp
 Z2h0OjEyLjBwdDttc28tbGluZS1oZWlnaHQtcnVsZToNCmV4YWN0bHknPjwhLS1baWYgc3VwcG9y
 dEZpZWxkc10+PGIgc3R5bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCmxh
 bmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBw
@@ -3275,81 +3183,210 @@ wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
 oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
 wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
 oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8
-L3NwYW4+wqkgT3BlbiBHZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsyMDIxJm5ic3A74oCTIEFs
-bCByaWdodHMgcmVzZXJ2ZWQ8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2
-IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmM2w+DQo8cCBjbGFzcz1Nc29Gb290ZXJM
-YW5kc2NhcGUgc3R5bGU9J21hcmdpbi10b3A6MTIuMHB0O2xpbmUtaGVpZ2h0OjEyLjBwdDttc28t
-bGluZS1oZWlnaHQtcnVsZToNCmV4YWN0bHknPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PGIgc3R5
-bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9
-J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxl
-PSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNl
-cnVuOnllcyc+wqA8L3NwYW4+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoMKg
-DQo8L3NwYW4+XCogTUVSR0VGT1JNQVQgPHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNl
-cGFyYXRvcic+PC9zcGFuPjwvc3Bhbj48L2I+PCFbZW5kaWZdLS0+PGINCnN0eWxlPSdtc28tYmlk
-aS1mb250LXdlaWdodDpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZTox
-MC4wcHQ7DQptc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiBzdHlsZT0nbXNvLW5vLXBy
-b29mOnllcyc+Mjwvc3Bhbj48L3NwYW4+PC9iPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PGINCnN0
-eWxlPSdtc28tYmlkaS1mb250LXdlaWdodDpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9
-J2ZvbnQtc2l6ZToxMC4wcHQ7DQptc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiBzdHls
-ZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwvYj48IVtlbmRpZl0tLT48
-c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNp
-emU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDCoMKgwqDC
+L3NwYW4+wqkgT3BlbiBHZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsyMDIyIOKAkyBBbGwgcmln
+aHRzIHJlc2VydmVkPG86cD48L286cD48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRpdiBzdHls
+ZT0nbXNvLWVsZW1lbnQ6aGVhZGVyJyBpZD1laDI+DQo8cCBjbGFzcz1Nc29IZWFkZXIgYWxpZ249
+bGVmdCBzdHlsZT0ndGV4dC1hbGlnbjpsZWZ0O2xpbmUtaGVpZ2h0OjEyLjBwdDsNCm1zby1saW5l
+LWhlaWdodC1ydWxlOmV4YWN0bHknPjxzcGFuIGxhbmc9RU4tR0I+T3BlbiBHZW9zcGF0aWFsIENv
+bnNvcnRpdW0mbmJzcDsyMS0wMzg8L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21z
+by1lbGVtZW50OmhlYWRlcicgaWQ9ZWgybD4NCjxwIGNsYXNzPU1zb0hlYWRlckxhbmRzY2FwZSBh
+bGlnbj1sZWZ0IHN0eWxlPSd0ZXh0LWFsaWduOmxlZnQ7bGluZS1oZWlnaHQ6MTIuMHB0Ow0KbXNv
+LWxpbmUtaGVpZ2h0LXJ1bGU6ZXhhY3RseSc+PHNwYW4gbGFuZz1FTi1HQj5PcGVuIEdlb3NwYXRp
+YWwgQ29uc29ydGl1bSZuYnNwOzIxLTAzODwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPGRpdiBzdHls
+ZT0nbXNvLWVsZW1lbnQ6aGVhZGVyJyBpZD1oMj4NCjxwIGNsYXNzPU1zb0hlYWRlciBhbGlnbj1y
+aWdodCBzdHlsZT0ndGV4dC1hbGlnbjpyaWdodDtsaW5lLWhlaWdodDoxMi4wcHQ7DQptc28tbGlu
+ZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPk9wZW4gR2Vvc3BhdGlhbCBD
+b25zb3J0aXVtJm5ic3A7MjEtMDM4PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdt
+c28tZWxlbWVudDpoZWFkZXInIGlkPWgybD4NCjxwIGNsYXNzPU1zb0hlYWRlckxhbmRzY2FwZSBh
+bGlnbj1yaWdodCBzdHlsZT0ndGV4dC1hbGlnbjpyaWdodDtsaW5lLWhlaWdodDoxMi4wcHQ7DQpt
+c28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5Jz48c3BhbiBsYW5nPUVOLUdCPk9wZW4gR2Vvc3Bh
+dGlhbCBDb25zb3J0aXVtJm5ic3A7MjEtMDM4PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2IHN0
+eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmMj4NCjxwIGNsYXNzPU1zb0Zvb3RlciBzdHls
+ZT0nbGluZS1oZWlnaHQ6MTIuMHB0O21zby1saW5lLWhlaWdodC1ydWxlOmV4YWN0bHknPjwhLS1b
+aWYgc3VwcG9ydEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4w
+cHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpm
+aWVsZC1iZWdpbic+PC9zcGFuPjxzcGFuDQpzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqA8L3Nw
+YW4+UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoMKgDQo8L3NwYW4+XCogTUVS
+R0VGT1JNQVQgPHNwYW4gc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFu
+Pjwvc3Bhbj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEw
+LjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1uby1wcm9v
+Zjp5ZXMnPmlpPC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5n
+PUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQn
+PjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2Vu
+ZGlmXS0tPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRp
+LWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuIA0Kc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+
+wqkgT3BlbiBHZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsyMDIyJm5ic3A74oCTIEFsbCByaWdo
+dHMgcmVzZXJ2ZWQ8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxl
+PSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmMmw+DQo8cCBjbGFzcz1Nc29Gb290ZXJMYW5kc2Nh
+cGUgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdDttc28tbGluZS1oZWlnaHQtcnVsZTpleGFjdGx5
+Jz48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNp
+emU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLWVs
+ZW1lbnQ6ZmllbGQtYmVnaW4nPjwvc3Bhbj48c3Bhbg0Kc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMn
+PsKgPC9zcGFuPlBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqDCoA0KPC9zcGFu
+PlwqIE1FUkdFRk9STUFUIDxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0b3In
+Pjwvc3Bhbj48L3NwYW4+PCFbZW5kaWZdLS0+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQt
+c2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdtc28t
+bm8tcHJvb2Y6eWVzJz5paTwvc3Bhbj48L3NwYW4+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48c3Bh
+bg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6
+MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bh
+bj48IVtlbmRpZl0tLT48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC1zaXplOjEwLjBwdDtt
+c28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiANCnN0eWxlPSdtc28tdGFiLWNvdW50OjEn
+PsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqAg
+PC9zcGFuPsKpIE9wZW4gR2Vvc3BhdGlhbCBDb25zb3J0aXVtJm5ic3A7MjAyMiZuYnNwO+KAkyBB
+bGwgcmlnaHRzIHJlc2VydmVkPG86cD48L286cD48L3NwYW4+PC9wPg0KDQo8L2Rpdj4NCg0KPGRp
+diBzdHlsZT0nbXNvLWVsZW1lbnQ6Zm9vdGVyJyBpZD1mMj4NCjxwIGNsYXNzPU1zb0Zvb3RlciBz
+dHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0Jz48c3BhbiBsYW5nPUVOLUdCDQpzdHlsZT0nZm9udC1z
+aXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz7CqSBPcGVuIEdlb3NwYXRpYWwg
+Q29uc29ydGl1bSZuYnNwOzIwMjImbmJzcDvigJMgQWxsDQpyaWdodHMgcmVzZXJ2ZWQ8c3BhbiBz
+dHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+
+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1z
+aXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFu
+PiBQQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgwqANCjwvc3Bhbj5cKiBNRVJH
+RUZPUk1BVCA8c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+
+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAu
+MHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLW5vLXByb29m
+Onllcyc+aWlpPC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxzcGFuDQpsYW5n
+PUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQn
+PjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9zcGFuPjwhW2Vu
+ZGlmXS0tPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRp
+LWZvbnQtc2l6ZToxMS4wcHQnPjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8ZGl2
+IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWYybD4NCjxwIGNsYXNzPU1zb0Zvb3Rlckxh
+bmRzY2FwZSBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0Jz48c3BhbiBsYW5nPUVOLUdCDQpzdHls
+ZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz7CqSBPcGVuIEdl
+b3NwYXRpYWwgQ29uc29ydGl1bSZuYnNwOzIwMjImbmJzcDvigJMgQWxsDQpyaWdodHMgcmVzZXJ2
+ZWQ8c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
 oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
 wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
 oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
 wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
 oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+wqkgT3BlbiBH
-ZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsyMDIxJm5ic3A74oCTIEFsbCByaWdodHMgcmVzZXJ2
-ZWQ8bzpwPjwvbzpwPjwvc3Bhbj48L3A+DQoNCjwvZGl2Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxl
-bWVudDpmb290ZXInIGlkPWYzPg0KPHAgY2xhc3M9TXNvRm9vdGVyIHN0eWxlPSdsaW5lLWhlaWdo
-dDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1i
-aWRpLWZvbnQtc2l6ZToxMS4wcHQnPsKpIE9wZW4gR2Vvc3BhdGlhbCBDb25zb3J0aXVtJm5ic3A7
-MjAyMSZuYnNwO+KAkyBBbGwNCnJpZ2h0cyByZXNlcnZlZDxzcGFuIHN0eWxlPSdtc28tdGFiLWNv
-dW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqAgPC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxiDQpzdHlsZT0nbXNv
-LWJpZGktZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNp
-emU6MTAuMHB0Ow0KbXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4gc3R5bGU9J21zby1l
-bGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+DQpQQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1
-bjp5ZXMnPsKgwqAgPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxzcGFuDQpzdHlsZT0nbXNvLWVsZW1l
-bnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwvYj48IVtlbmRpZl0tLT48Yg0Kc3R5
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+PC9zcGFuPjwhLS1baWYgc3VwcG9y
+dEZpZWxkc10+PHNwYW4NCmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJp
+ZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdp
+bic+PC9zcGFuPiBQQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgwqANCjwvc3Bh
+bj5cKiBNRVJHRUZPUk1BVCA8c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9y
+Jz48L3NwYW4+PC9zcGFuPjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250
+LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNv
+LW5vLXByb29mOnllcyc+aWlpPC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxz
+cGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6
+ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtZW5kJz48L3NwYW4+PC9z
+cGFuPjwhW2VuZGlmXS0tPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXNpemU6MTAuMHB0
+O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2
+Pg0KDQo8ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWVmMz4NCjxwIGNsYXNzPU1z
+b0Zvb3RlciBzdHlsZT0nbWFyZ2luLXRvcDoxMi4wcHQ7bGluZS1oZWlnaHQ6MTIuMHB0O21zby1s
+aW5lLWhlaWdodC1ydWxlOg0KZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48YiBzdHls
+ZT0nbXNvLWJpZGktZm9udC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0n
+Zm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9
+J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+PHNwYW4NCnN0eWxlPSdtc28tc3BhY2Vy
+dW46eWVzJz7CoDwvc3Bhbj5QQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgwqAN
+Cjwvc3Bhbj5cKiBNRVJHRUZPUk1BVCA8c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2Vw
+YXJhdG9yJz48L3NwYW4+PC9zcGFuPjwvYj48IVtlbmRpZl0tLT48Yg0Kc3R5bGU9J21zby1iaWRp
+LWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEw
+LjBwdDsNCm1zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuIHN0eWxlPSdtc28tbm8tcHJv
+b2Y6eWVzJz4yPC9zcGFuPjwvc3Bhbj48L2I+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48Yg0Kc3R5
 bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0n
 Zm9udC1zaXplOjEwLjBwdDsNCm1zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuIHN0eWxl
-PSdtc28tbm8tcHJvb2Y6eWVzJz4zPC9zcGFuPjwvc3Bhbj48L2I+PCEtLVtpZiBzdXBwb3J0Rmll
-bGRzXT48Yg0Kc3R5bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gbGFuZz1F
+PSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PC9iPjwhW2VuZGlmXS0tPjxz
+cGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6
+ZToxMS4wcHQnPjxzcGFuDQpzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj7CqSBPcGVuIEdl
+b3NwYXRpYWwgQ29uc29ydGl1bSZuYnNwOzIwMjImbmJzcDvigJMgQWxsIHJpZ2h0cyByZXNlcnZl
+ZDxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVt
+ZW50OmZvb3RlcicgaWQ9ZWYzbD4NCjxwIGNsYXNzPU1zb0Zvb3RlckxhbmRzY2FwZSBzdHlsZT0n
+bWFyZ2luLXRvcDoxMi4wcHQ7bGluZS1oZWlnaHQ6MTIuMHB0O21zby1saW5lLWhlaWdodC1ydWxl
+Og0KZXhhY3RseSc+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48YiBzdHlsZT0nbXNvLWJpZGktZm9u
+dC13ZWlnaHQ6bm9ybWFsJz48c3Bhbg0KbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBw
+dDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZp
+ZWxkLWJlZ2luJz48L3NwYW4+PHNwYW4NCnN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoDwvc3Bh
+bj5QQUdFPHNwYW4gc3R5bGU9J21zby1zcGFjZXJ1bjp5ZXMnPsKgwqANCjwvc3Bhbj5cKiBNRVJH
+RUZPUk1BVCA8c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+
+PC9zcGFuPjwvYj48IVtlbmRpZl0tLT48Yg0Kc3R5bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5v
+cm1hbCc+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDsNCm1zby1iaWRp
+LWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuIHN0eWxlPSdtc28tbm8tcHJvb2Y6eWVzJz4yPC9zcGFu
+Pjwvc3Bhbj48L2I+PCEtLVtpZiBzdXBwb3J0RmllbGRzXT48Yg0Kc3R5bGU9J21zby1iaWRpLWZv
+bnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBw
+dDsNCm1zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpm
+aWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PC9iPjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdC
+IHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxzcGFu
+DQpzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj7CqSBPcGVuIEdlb3NwYXRpYWwgQ29uc29y
+dGl1bSZuYnNwOzIwMjImbmJzcDvigJMgQWxsIHJpZ2h0cyByZXNlcnZlZDxvOnA+PC9vOnA+PC9z
+cGFuPjwvcD4NCg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1lbGVtZW50OmZvb3RlcicgaWQ9
+ZjM+DQo8cCBjbGFzcz1Nc29Gb290ZXIgc3R5bGU9J2xpbmUtaGVpZ2h0OjEyLjBwdCc+PHNwYW4g
+bGFuZz1FTi1HQg0Kc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjEx
+LjBwdCc+wqkgT3BlbiBHZW9zcGF0aWFsIENvbnNvcnRpdW0mbmJzcDsyMDIyJm5ic3A74oCTIEFs
+bA0KcmlnaHRzIHJlc2VydmVkPHNwYW4gc3R5bGU9J21zby10YWItY291bnQ6MSc+wqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoCA8L3NwYW4+PC9z
+cGFuPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PGINCnN0eWxlPSdtc28tYmlkaS1mb250LXdlaWdo
+dDpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7DQptc28t
+YmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6ZmllbGQtYmVn
+aW4nPjwvc3Bhbj4NClBBR0U8c3BhbiBzdHlsZT0nbXNvLXNwYWNlcnVuOnllcyc+wqDCoCA8L3Nw
+YW4+XCogTUVSR0VGT1JNQVQgPHNwYW4NCnN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1zZXBhcmF0
+b3InPjwvc3Bhbj48L3NwYW4+PC9iPjwhW2VuZGlmXS0tPjxiDQpzdHlsZT0nbXNvLWJpZGktZm9u
+dC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0
+Ow0KbXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4gc3R5bGU9J21zby1uby1wcm9vZjp5
+ZXMnPjM8L3NwYW4+PC9zcGFuPjwvYj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxiDQpzdHlsZT0n
+bXNvLWJpZGktZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCIHN0eWxlPSdmb250
+LXNpemU6MTAuMHB0Ow0KbXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4gc3R5bGU9J21z
+by1lbGVtZW50OmZpZWxkLWVuZCc+PC9zcGFuPjwvc3Bhbj48L2I+PCFbZW5kaWZdLS0+PHNwYW4N
+Cmxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7bXNvLWJpZGktZm9udC1zaXplOjEx
+LjBwdCc+PG86cD48L286cD48L3NwYW4+PC9wPg0KPC9kaXY+DQoNCjxkaXYgc3R5bGU9J21zby1l
+bGVtZW50OmZvb3RlcicgaWQ9ZjNsPg0KPHAgY2xhc3M9TXNvRm9vdGVyTGFuZHNjYXBlIHN0eWxl
+PSdsaW5lLWhlaWdodDoxMi4wcHQnPjxzcGFuIGxhbmc9RU4tR0INCnN0eWxlPSdmb250LXNpemU6
+MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPsKpIE9wZW4gR2Vvc3BhdGlhbCBDb25z
+b3J0aXVtJm5ic3A7MjAyMiZuYnNwO+KAkyBBbGwNCnJpZ2h0cyByZXNlcnZlZDxzcGFuIHN0eWxl
+PSdtc28tdGFiLWNvdW50OjEnPsKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
+wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
+oMKgwqDCoMKgwqDCoMKgwqAgPC9zcGFuPjwvc3Bhbj48IS0tW2lmIHN1cHBvcnRGaWVsZHNdPjxi
+DQpzdHlsZT0nbXNvLWJpZGktZm9udC13ZWlnaHQ6bm9ybWFsJz48c3BhbiBsYW5nPUVOLUdCIHN0
+eWxlPSdmb250LXNpemU6MTAuMHB0Ow0KbXNvLWJpZGktZm9udC1zaXplOjExLjBwdCc+PHNwYW4g
+c3R5bGU9J21zby1lbGVtZW50OmZpZWxkLWJlZ2luJz48L3NwYW4+DQpQQUdFPHNwYW4gc3R5bGU9
+J21zby1zcGFjZXJ1bjp5ZXMnPsKgwqAgPC9zcGFuPlwqIE1FUkdFRk9STUFUIDxzcGFuDQpzdHls
+ZT0nbXNvLWVsZW1lbnQ6ZmllbGQtc2VwYXJhdG9yJz48L3NwYW4+PC9zcGFuPjwvYj48IVtlbmRp
+Zl0tLT48Yg0Kc3R5bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNwYW4gbGFuZz1F
 Ti1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDsNCm1zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQn
-PjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48L3NwYW4+PC9iPjwh
-W2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6MTAuMHB0O21zby1i
-aWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4NCjwvZGl2Pg0KDQo8
-ZGl2IHN0eWxlPSdtc28tZWxlbWVudDpmb290ZXInIGlkPWYzbD4NCjxwIGNsYXNzPU1zb0Zvb3Rl
-ckxhbmRzY2FwZSBzdHlsZT0nbGluZS1oZWlnaHQ6MTIuMHB0Jz48c3BhbiBsYW5nPUVOLUdCDQpz
-dHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz7CqSBPcGVu
-IEdlb3NwYXRpYWwgQ29uc29ydGl1bSZuYnNwOzIwMjEmbmJzcDvigJMgQWxsDQpyaWdodHMgcmVz
-ZXJ2ZWQ8c3BhbiBzdHlsZT0nbXNvLXRhYi1jb3VudDoxJz7CoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKg
-wqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDC
-oMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgwqDCoMKgIDwvc3Bhbj48L3NwYW4+PCEtLVtpZiBz
-dXBwb3J0RmllbGRzXT48Yg0Kc3R5bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+PHNw
-YW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDsNCm1zby1iaWRpLWZvbnQtc2l6
-ZToxMS4wcHQnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1iZWdpbic+PC9zcGFuPg0K
-UEFHRTxzcGFuIHN0eWxlPSdtc28tc3BhY2VydW46eWVzJz7CoMKgIDwvc3Bhbj5cKiBNRVJHRUZP
-Uk1BVCA8c3Bhbg0Kc3R5bGU9J21zby1lbGVtZW50OmZpZWxkLXNlcGFyYXRvcic+PC9zcGFuPjwv
-c3Bhbj48L2I+PCFbZW5kaWZdLS0+PGINCnN0eWxlPSdtc28tYmlkaS1mb250LXdlaWdodDpub3Jt
-YWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7DQptc28tYmlkaS1m
-b250LXNpemU6MTEuMHB0Jz48c3BhbiBzdHlsZT0nbXNvLW5vLXByb29mOnllcyc+Mzwvc3Bhbj48
-L3NwYW4+PC9iPjwhLS1baWYgc3VwcG9ydEZpZWxkc10+PGINCnN0eWxlPSdtc28tYmlkaS1mb250
-LXdlaWdodDpub3JtYWwnPjxzcGFuIGxhbmc9RU4tR0Igc3R5bGU9J2ZvbnQtc2l6ZToxMC4wcHQ7
-DQptc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48c3BhbiBzdHlsZT0nbXNvLWVsZW1lbnQ6Zmll
-bGQtZW5kJz48L3NwYW4+PC9zcGFuPjwvYj48IVtlbmRpZl0tLT48c3Bhbg0KbGFuZz1FTi1HQiBz
-dHlsZT0nZm9udC1zaXplOjEwLjBwdDttc28tYmlkaS1mb250LXNpemU6MTEuMHB0Jz48bzpwPjwv
-bzpwPjwvc3Bhbj48L3A+DQo8L2Rpdj4NCg0KPC9ib2R5Pg0KDQo8L2h0bWw+DQo=
+PjxzcGFuIHN0eWxlPSdtc28tbm8tcHJvb2Y6eWVzJz4zPC9zcGFuPjwvc3Bhbj48L2I+PCEtLVtp
+ZiBzdXBwb3J0RmllbGRzXT48Yg0Kc3R5bGU9J21zby1iaWRpLWZvbnQtd2VpZ2h0Om5vcm1hbCc+
+PHNwYW4gbGFuZz1FTi1HQiBzdHlsZT0nZm9udC1zaXplOjEwLjBwdDsNCm1zby1iaWRpLWZvbnQt
+c2l6ZToxMS4wcHQnPjxzcGFuIHN0eWxlPSdtc28tZWxlbWVudDpmaWVsZC1lbmQnPjwvc3Bhbj48
+L3NwYW4+PC9iPjwhW2VuZGlmXS0tPjxzcGFuDQpsYW5nPUVOLUdCIHN0eWxlPSdmb250LXNpemU6
+MTAuMHB0O21zby1iaWRpLWZvbnQtc2l6ZToxMS4wcHQnPjxvOnA+PC9vOnA+PC9zcGFuPjwvcD4N
+CjwvZGl2Pg0KDQo8L2JvZHk+DQoNCjwvaHRtbD4NCg==
 
-------=_NextPart_58ebcba7.a27f.4df4--
+------=_NextPart_e3444dc3.9a6a.4c5b--

@@ -73,6 +73,12 @@ code *, pre *, tt *, kbd *, samp * {
   font-family: "Space Mono",monospace !important;
   font-variant-ligatures: none; }
 
+p code, dt code, li code, label code, legend code, caption code, th code, td code,
+p tt, dt tt, li tt, label tt, legend tt, caption tt, th tt, td tt,
+p kbd, dt kbd, li kbd, label kbd, legend kbd, caption kbd, th kbd, td kbd,
+p samp, dt samp, li samp, label samp, legend samp, caption samp, th samp, td samp {
+  font-size: 0.8em; }
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -82,6 +88,9 @@ table {
   border-spacing: 0; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Overpass",sans-serif; }
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Overpass",sans-serif; }
 
 blockquote, q {
@@ -154,6 +163,12 @@ a.FootnoteRef + a.FootnoteRef:before {
   background-color: #39CCCC; }
 
 #white-paper {
+  border-bottom: solid 3px #39CCCC; }
+
+#technical-paper-band {
+  background-color: #39CCCC; }
+
+#technical-paper {
   border-bottom: solid 3px #39CCCC; }
 
 #engineering-report-band {
@@ -410,6 +425,10 @@ a.FootnoteRef + a.FootnoteRef:before {
   font-weight: 300;
   margin-left: 1em; }
 
+.coverpage-logo img {
+  width: 500px;
+  height: auto; }
+
 .coverpage-tc-name {
   font-size: 1.2em;
   line-height: 1.2em;
@@ -500,54 +519,59 @@ dl {
   dl pre {
     overflow-x: scroll; }
 
-#toc ul {
+#toc ul, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul {
   margin: 0;
   padding: 0;
   list-style: none; }
-  #toc ul li a {
+  #toc ul li a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul li a {
     padding: 5px 10px; }
-  #toc ul a {
+  #toc ul a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul a {
     color: #00335b;
     text-decoration: none;
     display: block; }
-    #toc ul a:hover {
+    #toc ul a:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) ul a:hover {
       box-shadow: none;
       color: white; }
 
-#toc .h2 {
+#toc .h2, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h2 {
   padding-left: 30px; }
 
-#toc .h3 {
+#toc .h3, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .h3 {
   padding-left: 50px; }
 
-#toc .toc-active, #toc li:hover {
+#toc .toc-active, #toc li:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover {
   background: #00335b;
   box-shadow: inset -5px 0px 10px -5px #00335b !important; }
-  #toc .toc-active a, #toc li:hover a {
+  #toc .toc-active a, #toc li:hover a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover a {
     color: white; }
 
 @media print {
-  #toc .toc-active, #toc li:hover {
+  #toc .toc-active, #toc li:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover {
     background: white;
     box-shadow: none !important; }
-  #toc .toc-active a {
+  #toc .toc-active a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active a {
     color: #00335b; }
-  #toc li:hover a {
+  #toc li:hover a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover a {
     color: black; } }
 
-#toc li a {
+#toc li a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li a {
   font-size: 14px; }
 
-#toc li:before {
+#toc li:before, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:before {
   content: " ";
   display: none; }
 
-#toc .toc-active, #toc li:hover {
+#toc .toc-active, #toc li:hover, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) .toc-active, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover {
   font-weight: 600; }
 
-#toc li:hover a {
+#toc li:hover a, #toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) li:hover a {
   background: none;
   box-shadow: none; }
+
+#toc > ul :is(.h1, .h2, .h3, .h4, .h5, .h6) {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 100%; }
 
 @media screen and (min-width: 768px) {
   nav {
@@ -610,7 +634,7 @@ dl {
 @media screen and (min-width: 768px) {
   h1.toc-contents {
     margin-top: 1em; }
-  ul#toc-list {
+  ul#toc-list, ul#toc-list > :is(.h1, .h2, .h3, .h4, .h5, .h6) {
     padding: 0;
     margin: 0; } }
 
@@ -719,32 +743,33 @@ p {
   margin-top: 1em;
   margin-bottom: 1em; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
   color: #00335b;
   font-weight: 400;
   margin-top: 1.6em;
   margin-bottom: 0.3em; }
 
-h1 {
+h1, .h1 {
   font-size: 1.8em;
   text-transform: uppercase;
   margin-top: 2em; }
-  h1 #content {
+  h1 #content, .h1 #content {
     margin-top: 2em; }
 
-h2 {
+h2, .h2 {
   margin-top: 1.3em;
   font-size: 1.7em;
   font-weight: 300; }
-  h2 p {
+  h2 p, .h2 p {
     display: inline; }
 
-h3 {
+h3, .h3 {
   margin-top: 1.3em;
   font-size: 1.5em;
   font-weight: 100; }
 
-h4 {
+h4, .h4 {
   font-size: 1.4em; }
 
 .contact-info {
@@ -788,6 +813,12 @@ ul > li {
     display: inline; }
   ul > li:first-child {
     margin-top: 1em; }
+
+ul ul > li:first-child {
+  margin-top: 0; }
+
+ol ul > li:first-child {
+  margin-top: 0; }
 
 span.keyword {
   font-weight: 600; }
@@ -858,9 +889,11 @@ p.TableTitle {
   font-weight: 400; }
 
 /* Terms */
+.TermNum {
+  font-weight: 300; }
+
 .TermNum, .Terms, .AltTerms {
   color: #00335b;
-  font-weight: 300;
   font-family: "Overpass",sans-serif; }
 
 h2.TermNum {
@@ -869,6 +902,12 @@ h2.TermNum {
 p.AltTerms {
   font-size: 24px;
   margin-top: 1em; }
+
+span.AdmittedLabel {
+  color: #00335b;
+  background-color: #CFE2F3;
+  font-size: 70%;
+  vertical-align: top; }
 
 /* Links, selection */
 a, a:visited {
@@ -1070,18 +1109,18 @@ a.anchorjs-link:hover {
   margin: 2cm 1cm; }
 
 @media print {
-  h1, h2, h3, h4 {
+  h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
     page-break-after: avoid;
     margin-top: 1.2em; }
-  h1 {
+  h1, .h1 {
     font-size: 1.5em;
     line-height: 1.5; }
-    h1.content {
+    h1.content, .h1.content {
       margin-top: 2em;
       line-height: 2.5em; }
-  h2 {
+  h2, .h2 {
     font-size: 1.2em; }
-  h3 {
+  h3, .h3 {
     font-size: 1em; }
   .prefatory-section {
     page-break-before: always; }
@@ -1118,8 +1157,8 @@ span.hi {
 </script>
 
 <!--Google fonts-->
-  <link rel="preconnect" href="https://fonts.gstatic.com" /> 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.com" /> 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500" rel="stylesheet" />
 
@@ -1156,7 +1195,7 @@ span.hi {
   </div>
 
   <div class="coverpage-logo">
-    <span>Open Geospatial Consortium</span>
+    <span><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgMTUxMS42NSA1MDYuNzYiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO30uY2xzLTJ7Y2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoKTt9LmNscy0ze2ZpbGw6IzAwYjFmZjt9PC9zdHlsZT48Y2xpcFBhdGggaWQ9ImNsaXAtcGF0aCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSI+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iMTkyMCIgaGVpZ2h0PSI5NzguMjUiLz48L2NsaXBQYXRoPjwvZGVmcz48ZyBpZD0iQmx1ZV9Ib3Jpem9udGFsX0xvY2t1cCIgZGF0YS1uYW1lPSJCbHVlIEhvcml6b250YWwgTG9ja3VwIj48ZyBjbGFzcz0iY2xzLTIiPjxwb2x5Z29uIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSIyMDQuMDcgMzY1LjI3IDIwNC4wNyA1MDYuNzMgMC4wMSAzODguOTEgMCAxNTMuMTUgMjA0LjA3IDI3MC45NyAyMDQuMDcgMzE4LjExIDE2My4zNCAyOTQuNjEgMTQyLjkzIDI4Mi44MiAxNDIuOTIgMjgyLjgyIDQwLjg0IDIyMy44OCA0MC44NCAzNjUuMzMgMTYzLjM0IDQzNi4wNiAxNjMuMzQgMzg4LjkxIDEwMi4wOSAzNTMuNTUgMTAyLjA5IDMyOS45NyAxMDIuMDkgMzA2LjQgMjA0LjA3IDM2NS4yNyIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTQyOC42OCwyMzUuNzYsMjI0LjUsMzUzLjY0LDQyOC42OCw0NzEuNTIsNjMyLjg1LDM1My42NFptMCwxODguNjFMMzA2LjE3LDM1My42NGwxMjIuNTItNzAuNzMsMTIyLjQ5LDcwLjczLTIwLjQxLDExLjc5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMyIgcG9pbnRzPSIzMjYuNzggMjcwLjQgMzY3LjYyIDI0Ni44MyA0MDguNDUgMjIzLjI1IDQwOC40NiAyNzAuNCA0NDkuMTggMjQ2Ljg5IDQ0OS4xOCAxNTMuMTIgMjQ1LjEyIDI3MC45NCAyNDUuMTIgMzE3LjU1IDI0NS4xMiAzMTcuNTUgMjQ1LjEyIDMzMS42MyAyNDUuMTIgNTA2LjE3IDI0NS4wMSA1MDYuMTEgMjQ1LjAxIDUwNi43NiA0NDkuMTggMzg4Ljg4IDQ0OS4xOCAyOTQuMDQgNDA4LjQ2IDMxNy41NiA0MDguNDYgMzY0LjcxIDI4NS45NSA0MzUuNDQgMjg1Ljk2IDI5My45OCAzMjYuNzggMjcwLjQiLz48ZyBjbGFzcz0iY2xzLTIiPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTg4MC41NywzOTguMTdjLTMyLjgxLDAtNTctMjQuMDYtNTctNTYuMDVzMjQuMi01Ni4wNSw1Ny01Ni4wNSw1Ni45MSwyNCw1Ni45MSw1Ni4wNS0yNC4xNSw1Ni4wNi01Ni45MSw1Ni4wNlptMzguODctNTYuMDVjMC0yMi4zLTE2LjU5LTM5LTM4Ljg3LTM5cy0zOSwxNi44NC0zOSwzOSwxNi42OSwzOSwzOSwzOSwzOC44Ny0xNi42OSwzOC44Ny0zOSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTEwMDAuNDgsMzEwLjc2YzI0Ljk0LDAsNDMuMTgsMTguNjIsNDMuMTgsNDMuNzFzLTE4LjI0LDQzLjc1LTQzLjE4LDQzLjc1YTQxLjY3LDQxLjY3LDAsMCwxLTI3LjY3LTEwLjA5VjQyNkg5NTUuNjdWMzEyLjhoMTEuNTVMOTcwLjQ0LDMyM2E0MS41LDQxLjUsMCwwLDEsMzAtMTIuMjZabTI1Ljg0LDQzLjcxYzAtMTUuNzEtMTEuNDctMjcuMzUtMjcuMTktMjcuMzVzLTI3LjMsMTEuNzUtMjcuMywyNy4zNSwxMS41OSwyNy4zNSwyNy4zLDI3LjM1LDI3LjE5LTExLjY0LDI3LjE5LTI3LjM1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA0LjE3IC0yMzUuNzYpIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMTE0MS4xOSwzNTQuNjdhNTYuMTUsNTYuMTUsMCwwLDEtLjM1LDUuNjNoLTY3LjY1YzIuMTQsMTMuNSwxMS44NiwyMS44MSwyNS41MSwyMS44MSwxMCwwLDE4LTQuNjEsMjIuNDItMTIuMjFoMThjLTYuNjMsMTcuNi0yMS44NSwyOC4yOC00MC40NiwyOC4yOC0yNC4zNywwLTQyLjgzLTE4LjgxLTQyLjgzLTQzLjcxczE4LjQyLTQzLjcsNDIuODMtNDMuN2MyNS41MSwwLDQyLjQ5LDE5LjY0LDQyLjQ5LDQzLjlabS02Ny41OC04LjNIMTEyNGMtMy4wOC0xMi42Ni0xMi42Mi0yMC4xMy0yNS4zMS0yMC4xMy0xMi44OSwwLTIyLjI4LDcuNzctMjUuMDksMjAuMTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMDQuMTcgLTIzNS43NikiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xMjAzLjUsMzEwLjljMTkuNDksMCwzMS42NiwxNC41MywzMS42NiwzNS4wNnY1MC4xOUgxMjE4VjM0OS40NGMwLTE1LjE0LTYuNTktMjMuMTgtMTkuMTItMjMuMTgtMTMuMSwwLTIyLjM5LDEwLjU0LTIyLjM5LDI1LjI2djQ0LjYzaC0xNy4xNFYzMTIuOGgxMS45NWwzLjMyLDExLjYzYzYuMzEtOC40MSwxNi42MS0xMy41MywyOC44NS0xMy41M1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMDQuMTcgLTIzNS43NikiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik05MzMuNDUsNDkwLjJjLS40NCwzMy4xMi0yMi44LDU2Ljg5LTU0LjU0LDU2Ljg5cy01NS4zLTIzLjctNTUuMy01NiwyMy4yOS01Niw1NC45NS01NmMyNi4zNSwwLDQ4LjQsMTYuNTksNTMuMjgsNDAuMUg5MTMuNTZjLTQuNjMtMTMuODktMTguMzYtMjIuOTQtMzQuNjUtMjIuOTQtMjEuODQsMC0zNy4yNiwxNi0zNy4yNiwzOC44M3MxNSwzOC44NiwzNy4yNiwzOC44NmMxNy4yNSwwLDMxLjI3LTkuNzUsMzUuMzEtMjQuNDNIODc1LjdWNDkwLjE5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTEwMzEuMzEsNTAzLjU4YTUzLjE5LDUzLjE5LDAsMCwxLS4zNiw1LjYzSDk2My4zYzIuMTQsMTMuNTEsMTEuODcsMjEuODEsMjUuNTEsMjEuODEsMTAsMCwxOC00LjYsMjIuNDMtMTIuMmgxOGMtNi42NCwxNy41OS0yMS44NSwyOC4yNy00MC40NiwyOC4yNy0yNC4zNywwLTQyLjgzLTE4LjgxLTQyLjgzLTQzLjdzMTguNDItNDMuNzEsNDIuODMtNDMuNzFjMjUuNSwwLDQyLjQ5LDE5LjY1LDQyLjQ5LDQzLjlabS02Ny41OC04LjI5aDUwLjRjLTMuMDgtMTIuNjYtMTIuNjItMjAuMTQtMjUuMzItMjAuMTQtMTIuODgsMC0yMi4yNyw3Ljc4LTI1LjA4LDIwLjE0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA0LjE3IC0yMzUuNzYpIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMTA4Ny45NCw1NDcuMDljLTI1LjQ5LDAtNDQuNTYtMTguNjUtNDQuNTYtNDMuNzFzMTkuMDctNDMuNyw0NC41Ni00My43LDQ0LjU2LDE4LjYxLDQ0LjU2LDQzLjcxUzExMTMuMzksNTQ3LjA5LDEwODcuOTQsNTQ3LjA5Wm0yNy4xMi00My43MWMwLTE1Ljk1LTExLjM0LTI3LjM0LTI3LjEyLTI3LjM0cy0yNy4xMiwxMS4zOS0yNy4xMiwyNy4zNCwxMS4zNCwyNy4zNSwyNy4xMiwyNy4zNSwyNy4xMi0xMS4zOSwyNy4xMi0yNy4zNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTExNDQuNDQsNTE4LjZoMTYuNzRjLjQ0LDguODEsNy44NCwxMy40MSwxNy44OCwxMy40MSw5LjIxLDAsMTYuMjgtMy44OSwxNi4yOC0xMC44NiwwLTcuOS04Ljk0LTkuNzEtMTkuMTUtMTEuNDMtMTMuODktMi4zOC0zMC4yNS01LjUzLTMwLjI1LTI0Ljg1LDAtMTQuOTUsMTIuOTItMjUuMTksMzIuMzEtMjUuMTlzMzEuOTMsMTAuNTQsMzIuMjYsMjYuNzFoLTE2LjIyYy0uMzMtNy45My02LjM3LTEyLjE5LTE2LjQ0LTEyLjE5LTkuNDcsMC0xNS4zMyw0LTE1LjMzLDEwLjEyLDAsNy4zNSw4LjUsOC44MSwxOC41NiwxMC40NiwxNC4wOCwyLjM2LDMxLjE5LDUuMDcsMzEuMTksMjUuNjIsMCwxNi4xOS0xMy40OSwyNi42OS0zMy44LDI2LjY5cy0zMy41OS0xMS4yLTM0LTI4LjQ5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA0LjE3IC0yMzUuNzYpIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMTI3NS40OSw0NTkuNjhjMjQuOTQsMCw0My4xOCwxOC42MSw0My4xOCw0My43MXMtMTguMjQsNDMuNzUtNDMuMTgsNDMuNzVhNDEuNjUsNDEuNjUsMCwwLDEtMjcuNjctMTAuMXYzNy45aC0xNy4xNFY0NjEuNzFoMTEuNTVsMy4yMiwxMC4yNGE0MS40OCw0MS40OCwwLDAsMSwzMC0xMi4yN1ptMjUuODUsNDMuN2MwLTE1LjcxLTExLjQ4LTI3LjM0LTI3LjE5LTI3LjM0cy0yNy4zMSwxMS43NC0yNy4zMSwyNy4zNCwxMS41OSwyNy4zNSwyNy4zMSwyNy4zNSwyNy4xOS0xMS42MywyNy4xOS0yNy4zNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTE0MjAsNDYxLjY3VjU0NWgtMTMuODJsLTEuNjctMTAuMTRhNDEuODQsNDEuODQsMCwwLDEtMzAuMjIsMTIuMjFjLTI0Ljg0LDAtNDMuNC0xOC43Ni00My40LTQzLjc1czE4LjU2LTQzLjY2LDQzLjQtNDMuNjZjMTIuMjgsMCwyMi45MSw0LjY0LDMwLjQ4LDEyLjQxbDItMTAuNDJabS0xNy4xOCw0MS42N2MwLTE1LjcxLTExLjQ4LTI3LjM0LTI3LjE5LTI3LjM0cy0yNy4zLDExLjc0LTI3LjMsMjcuMzQsMTEuNTksMjcuMzUsMjcuMywyNy4zNSwyNy4xOS0xMS42NCwyNy4xOS0yNy4zNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTE0OTEuMDgsNTI5LjV2MTUuNTZoLTEyLjczYy0xOC4yNiwwLTI5LjUzLTExLjI2LTI5LjUzLTI5LjY4di0zOWgtMTQuOTF2LTMuMzJsMjktMzAuODJoMi45MXYxOS40NmgyNC44djE0LjY4SDE0NjZWNTE0YzAsOS45Myw1LjUzLDE1LjQ3LDE1LjYzLDE1LjQ3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTE1MDcuNDIsNDMxLjEyaDE3Ljd2MTcuNjdoLTE3LjdabS4yOCwzMC41OWgxNy4xNHY4My4zNUgxNTA3LjdaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA0LjE3IC0yMzUuNzYpIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMTYzMi4yLDQ2MS42N1Y1NDVoLTEzLjgybC0xLjY3LTEwLjE0YTQxLjg0LDQxLjg0LDAsMCwxLTMwLjIyLDEyLjIxYy0yNC44MywwLTQzLjQtMTguNzYtNDMuNC00My43NXMxOC41Ny00My42Niw0My40LTQzLjY2YzEyLjI4LDAsMjIuOTEsNC42NCwzMC40OCwxMi40MWwyLTEwLjQyWk0xNjE1LDUwMy4zNGMwLTE1LjcxLTExLjQ4LTI3LjM0LTI3LjE5LTI3LjM0cy0yNy4zLDExLjc0LTI3LjMsMjcuMzQsMTEuNTksMjcuMzUsMjcuMywyNy4zNVMxNjE1LDUxOS4wNSwxNjE1LDUwMy4zNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSIvPjxyZWN0IGNsYXNzPSJjbHMtMyIgeD0iMTQ1Mi40NSIgeT0iMTk2LjA4IiB3aWR0aD0iMTcuMTQiIGhlaWdodD0iMTEzLjIzIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNODIzLjYxLDY0MGMwLTMyLjMzLDIzLjU3LTU2LDU1LjU0LTU2LDI1LjU2LDAsNDYuMDUsMTUuOTMsNTEuNzIsNDAuMjVoLTE4Yy01LjE2LTE0LjM5LTE3Ljc3LTIzLjA5LTMzLjc3LTIzLjA5LTIxLjY0LDAtMzcuNSwxNi4yOC0zNy41LDM4LjgzczE1Ljg2LDM4Ljc0LDM3LjUsMzguNzRjMTYuNTEsMCwyOS4yNy05LjMyLDM0LjE0LTI0LjY0aDE4Yy01LjYxLDI1LjQxLTI2LjEsNDEuOC01Mi4xMyw0MS44LTMyLDAtNTUuNTQtMjMuNjYtNTUuNTQtNTUuOSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTk4Ni44Niw2OTZjLTI1LjUsMC00NC41Ny0xOC42Ni00NC41Ny00My43MXMxOS4wNy00My43MSw0NC41Ny00My43MSw0NC41NiwxOC42Miw0NC41Niw0My43MVMxMDEyLjMsNjk2LDk4Ni44Niw2OTZaTTEwMTQsNjUyLjNjMC0xNS45NS0xMS4zNS0yNy4zNS0yNy4xMi0yNy4zNXMtMjcuMTMsMTEuNC0yNy4xMywyNy4zNSwxMS4zNSwyNy4zNSwyNy4xMywyNy4zNVMxMDE0LDY2OC4yNSwxMDE0LDY1Mi4zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA0LjE3IC0yMzUuNzYpIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMTA5My43Nyw2MDguNzNjMTkuNDksMCwzMS42NiwxNC41MywzMS42NiwzNS4wNlY2OTRIMTEwOC4zVjY0Ny4yN2MwLTE1LjEzLTYuNTktMjMuMTgtMTkuMTItMjMuMTgtMTMuMSwwLTIyLjM5LDEwLjU0LTIyLjM5LDI1LjI2VjY5NGgtMTcuMTRWNjEwLjYzaDExLjk1bDMuMzMsMTEuNjNjNi4zLTguNDEsMTYuNi0xMy41MywyOC44NC0xMy41M1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMDQuMTcgLTIzNS43NikiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xMTQyLjQzLDY2Ny41MWgxNi43NGMuNDQsOC44Miw3Ljg0LDEzLjQyLDE3Ljg5LDEzLjQyLDkuMiwwLDE2LjI3LTMuOSwxNi4yNy0xMC44NiwwLTcuOTEtOC45NC05LjcyLTE5LjE1LTExLjQzLTEzLjg4LTIuMzgtMzAuMjUtNS41NC0zMC4yNS0yNC44NiwwLTE0Ljk1LDEyLjkzLTI1LjE4LDMyLjMxLTI1LjE4czMxLjk0LDEwLjU0LDMyLjI3LDI2LjdoLTE2LjIzYy0uMzMtNy45My02LjM3LTEyLjE4LTE2LjQ0LTEyLjE4LTkuNDcsMC0xNS4zMyw0LTE1LjMzLDEwLjExLDAsNy4zNiw4LjUxLDguODEsMTguNTYsMTAuNDcsMTQuMDksMi4zNSwzMS4yLDUuMDcsMzEuMiwyNS42MiwwLDE2LjE5LTEzLjUsMjYuNjktMzMuODEsMjYuNjlzLTMzLjU5LTExLjIxLTM0LTI4LjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMDQuMTcgLTIzNS43NikiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xMjY3LjEyLDY5NmMtMjUuNSwwLTQ0LjU3LTE4LjY2LTQ0LjU3LTQzLjcxczE5LjA3LTQzLjcxLDQ0LjU3LTQzLjcxLDQ0LjU2LDE4LjYyLDQ0LjU2LDQzLjcxUzEyOTIuNTYsNjk2LDEyNjcuMTIsNjk2Wm0yNy4xMi00My43MWMwLTE1Ljk1LTExLjM1LTI3LjM1LTI3LjEyLTI3LjM1UzEyNDAsNjM2LjM1LDEyNDAsNjUyLjNzMTEuMzUsMjcuMzUsMjcuMTMsMjcuMzUsMjcuMTItMTEuNCwyNy4xMi0yNy4zNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTEzNzcuMzMsNjEwLjE2djE2LjE5aC05Yy0xNC4xNywwLTIxLjI0LDguMDgtMjEuMjQsMjMuMThWNjk0aC0xNy4xNFY2MTAuNjNoMTEuNTlsMi45LDExLjM3YzYtNy45LDE0LjE0LTExLjg0LDI1LjUyLTExLjg0WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTE0MzcuNTMsNjc4LjQxVjY5NGgtMTIuNzRjLTE4LjI2LDAtMjkuNTItMTEuMjctMjkuNTItMjkuNjh2LTM5aC0xNC45MVY2MjJsMjktMzAuODJoMi45MnYxOS40NmgyNC44VjYyNS4zSDE0MTIuNHYzNy42NGMwLDkuOTQsNS41MywxNS40NywxNS42MiwxNS40N1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yMDQuMTcgLTIzNS43NikiLz48cGF0aCBjbGFzcz0iY2xzLTMiIGQ9Ik0xNDUzLjg2LDU4MGgxNy43MXYxNy42N2gtMTcuNzFabS4yOSwzMC41OWgxNy4xM1Y2OTRoLTE3LjEzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwNC4xNyAtMjM1Ljc2KSIvPjxwYXRoIGNsYXNzPSJjbHMtMyIgZD0iTTE0OTQuMzYsNjU4Ljc4VjYxMC42M2gxNy4xNHY0NS43NWMwLDE0LjQ4LDcuOSwyMy4yNywyMC43NywyMy4yN1MxNTUzLDY3MC43LDE1NTMsNjU2LjM4VjYxMC42M2gxNy4xNHY0OC4xNWMwLDIyLjQzLTE0Ljg3LDM3LjIzLTM3Ljg3LDM3LjIzcy0zNy45MS0xNC44LTM3LjkxLTM3LjIzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA0LjE3IC0yMzUuNzYpIi8+PHBhdGggY2xhc3M9ImNscy0zIiBkPSJNMTY4Ni4zOSw2MDguNzNjMTcuNTcsMCwyOS40MywxMy4zNywyOS40MywzMi4yNHY1M2gtMTcuMTN2LTQ4LjhjMC0xMy40Mi01LjgzLTIxLjA5LTE2LjIxLTIxLjA5LTExLDAtMTkuNTUsMTAuMTItMTkuNTUsMjQuMzFWNjk0SDE2NDYuMnYtNDguOGMwLTEzLjQyLTUuNzktMjEuMDktMTYuMjQtMjEuMDktMTEuMDgsMC0xOS42MywxMC4xMi0xOS42MywyNC4zMVY2OTRIMTU5My4yVjYxMC42M2gxMi4xNGwzLDEwLjc3YTMzLjM4LDMzLjM4LDAsMCwxLDI1Ljg5LTEyLjY3YzExLjMsMCwyMC4yNSw1LjU1LDI1LDE0LjU5YTMzLDMzLDAsMCwxLDI3LjItMTQuNTlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjA0LjE3IC0yMzUuNzYpIi8+PC9nPjwvZz48L2c+PC9zdmc+" alt="Open Geospatial Consortium" width="" height="" /></span>
   </div>
 
   <!--
@@ -1166,6 +1205,10 @@ span.hi {
   -->
 
   <div class="authors">
+    
+    
+    
+
     
     
     <span>Dr. Matthew Brian John Purss <span class="roletag">Editor</span></span>
@@ -1222,11 +1265,11 @@ span.hi {
     <div class="boilerplate-legal">
 
 
-    <div><h1 class="IntroTitle">Warning for Drafts</h1>
+    <div><h1 class="IntroTitle">Notice for Drafts</h1>
 
-      <p id="_78c9c138-0bd5-4ffc-89e7-282090283a20">This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
+      <p id="_09caafd2-d047-3050-9095-b3f182faf86f">This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.</p>
 
-      <p id="_3986946f-1073-4853-a56e-875049fa273e">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
+      <p id="_d80fd0eb-fbfd-dec3-0ddb-92472f4d5fcf">Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.</p>
     </div>
 
 
@@ -1252,16 +1295,16 @@ span.hi {
     <div><h1 class="IntroTitle">Copyright notice</h1>
 
 
-      <p id="_f0007a79-224c-4f39-a7c4-c4e89ccbc5e9" style="text-align:center;">Copyright
-        &#xA9; 2021 Open Geospatial Consortium<br />
+      <p id="_609a02a1-fa53-7a69-1cb9-ff2ed59292e2" style="text-align:center;">Copyright
+        &#xA9; 2022 Open Geospatial Consortium<br />
         To obtain additional rights of use, visit
         <a href="http://www.ogc.org/legal/">http://www.ogc.org/legal/</a></p>
     </div>
     <div><h1 class="IntroTitle">Note</h1>
 
-      <p id="_f2137218-a1ce-4468-9bf3-ea039dd9ea7b" style="text-align:left;">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+      <p id="_11e88dba-9912-1a89-a82d-7291bf232191" style="text-align:left;">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
 
-      <p id="_86ae499f-714c-4780-a379-76e8ee486730" style="text-align:left;">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+      <p id="_15067213-c07b-cba0-7e18-395ab2e00ab3" style="text-align:left;">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
     </div>
   </div>
 </div>
@@ -1273,7 +1316,7 @@ span.hi {
 
 </header>
 
-      <p>&#xA0;</p>
+      
     </div>
     <br />
     <div class="prefatory-section"><div class="license">
@@ -1281,7 +1324,7 @@ span.hi {
     <div><h1 class="IntroTitle">License Agreement</h1>
 
 
-      <p id="_03e66146-6dce-435f-b712-55fe041e6c9d">Permission is hereby granted by the Open Geospatial
+      <p id="_e8566381-218f-c22d-320d-4d0371bfd58f">Permission is hereby granted by the Open Geospatial
         Consortium, (&#x201C;Licensor&#x201D;), free of charge and subject to the terms set
         forth below, to any person obtaining a copy of this Intellectual Property and
         any associated documentation, to deal in the Intellectual Property without
@@ -1292,12 +1335,12 @@ span.hi {
         on the intellectual property are retained intact and that each person to whom
         the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
 
-      <p id="_88da5557-0236-4968-937e-dd1836cf01e3">If you modify the Intellectual Property, all copies of
+      <p id="_52ebb386-d365-27d0-d76d-a59ac165fc4d">If you modify the Intellectual Property, all copies of
         the modified Intellectual Property must include, in addition to the above
         copyright notice, a notice that the Intellectual Property includes
         modifications that have not been approved or adopted by LICENSOR.</p>
 
-      <p id="_7cfd6c28-c13b-4890-8951-2c0236a0735e">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
+      <p id="_178f14b4-0718-a5b8-09cd-84f8f4b756ed">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
         CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
         THE INTELLECTUAL PROPERTY IS PROVIDED &#x201C;AS
         IS&#x201D;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
@@ -1315,7 +1358,7 @@ span.hi {
         OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR
         PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
 
-      <p id="_43d42980-a1ed-43f4-a9fd-9e54261f68d4">This license is effective until terminated. You may
+      <p id="_2ad7fe27-9ae4-52c5-9dd9-faa4004247fb">This license is effective until terminated. You may
         terminate it at any time by destroying the Intellectual Property together with
         all copies in any form. The license will also terminate if you fail to comply
         with any term or condition of this Agreement. Except as provided in the
@@ -1331,7 +1374,7 @@ span.hi {
         destroyed the Intellectual Property together with all copies in any form,
         whether held by you or by any third party.</p>
 
-      <p id="_fde4df22-dbbc-4aed-8a92-0ee6024ce081">Except as contained in this notice, the name of
+      <p id="_3254c815-179c-5f54-9a01-b8e964837171">Except as contained in this notice, the name of
         LICENSOR or of any other holder of a copyright in all or part of the Intellectual
         Property shall not be used in advertising or otherwise to promote the sale, use
         or other dealings in this Intellectual Property without prior written
@@ -1349,7 +1392,7 @@ span.hi {
         decision, action or inaction by LICENSOR shall be construed to be a waiver of
         any rights or remedies available to it.</p>
 
-      <p id="_5c139993-7720-4fb2-9bc0-cc6b17b88826">None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
+      <p id="_4fa1ef5b-3dd5-7a05-3c68-bca93a0f14bb">None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
     </div>
   </div>
 
@@ -1357,7 +1400,7 @@ span.hi {
 <div class="boilerplate-feedback">
 
     <div id="boilerplate-standard-feedback">
-      <p id="_b008539b-0b4e-4168-8f8c-0690002b6768">Suggested additions, changes and comments on this standard are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <a href="http://portal.opengeospatial.org/public_ogc/change_request.php">http://portal.opengeospatial.org/public_ogc/change_request.php</a></p>
+      <p id="_bbc1a653-f270-135d-9455-af930feb3587">Suggested additions, changes and comments on this document are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <a href="http://portal.opengeospatial.org/public_ogc/change_request.php">http://portal.opengeospatial.org/public_ogc/change_request.php</a></p>
     </div>
 
   </div>
@@ -1367,14 +1410,14 @@ span.hi {
 
 <nav>
   <h1 id="content">Contents</h1>
-  <div id="toc"><ul><li class="h1"><a href="#toc0">      I.&#xA0; Abstract</a></li><li class="h1"><a href="#toc1">      II.&#xA0; Keywords</a></li><li class="h1"><a href="#toc2">      III.&#xA0; Preface</a></li><li class="h1"><a href="#toc3">      IV.&#xA0; Security Considerations</a></li><li class="h1"><a href="#toc4">      V.&#xA0; Submitting Organizations</a></li><li class="h1"><a href="#toc5">      1.&#xA0; Scope</a></li><li class="h1"><a href="#toc6">      2.&#xA0; Conformance</a></li><li class="h1"><a href="#toc7">      3.&#xA0; Normative references</a></li><li class="h1"><a href="#toc8">      4.&#xA0; Terms and definitions</a></li><li class="h1"><a href="#toc9">      5.&#xA0; Conventions</a></li><li class="h2"><a href="#toc10">      5.1.&#xA0; Identifiers</a></li><li class="h1"><a href="#toc11">      6.&#xA0; Clauses not Containing Normative Material</a></li><li class="h2"><a href="#toc12">      6.1.&#xA0; Clauses not containing normative material sub-clause 1</a></li><li class="h2"><a href="#toc13">      6.2.&#xA0; Clauses not containing normative material sub-clause 2</a></li><li class="h1"><a href="#toc14">      7.&#xA0; Clause containing normative material</a></li><li class="h2"><a href="#toc15">      7.1.&#xA0; Requirement Class A or Requirement A Example</a></li><li class="h1"><a href="#toc16">      8.&#xA0; Media Types for any data encoding(s)</a></li><li class="h1"><a href="#toc17">      Annex A (normative) Conformance Class Abstract Test Suite (Normative)</a></li><li class="h2"><a href="#toc18">      A.1.&#xA0; Conformance Class A</a></li><li class="h1"><a href="#toc19">      Annex B (informative) Title</a></li><li class="h1"><a href="#toc20">      Annex C (normative) Revision History</a></li><li class="h1"><a href="#toc21">      Bibliography</a></li></ul></div>
+  <div id="toc"><ul><li class="h1"><a href="#toc0">      I.&#xA0; Abstract</a></li><li class="h1"><a href="#toc1">      II.&#xA0; Keywords</a></li><li class="h1"><a href="#toc2">      III.&#xA0; Preface</a></li><li class="h1"><a href="#toc3">      IV.&#xA0; Security considerations</a></li><li class="h1"><a href="#toc4">      V.&#xA0; Submitting Organizations</a></li><li class="h1"><a href="#toc5">      1.&#xA0; Scope</a></li><li class="h1"><a href="#toc6">      2.&#xA0; Conformance</a></li><li class="h1"><a href="#toc7">      3.&#xA0; Normative references</a></li><li class="h1"><a href="#toc8">      4.&#xA0; Terms and definitions</a></li><li class="h1"><a href="#toc9">      5.&#xA0; Conventions</a></li><li class="h2"><a href="#toc10">      5.1.&#xA0; Identifiers</a></li><li class="h1"><a href="#toc11">      6.&#xA0; Clauses not Containing Normative Material</a></li><li class="h2"><a href="#toc12">      6.1.&#xA0; Clauses not containing normative material sub-clause 1</a></li><li class="h2"><a href="#toc13">      6.2.&#xA0; Clauses not containing normative material sub-clause 2</a></li><li class="h1"><a href="#toc14">      7.&#xA0; Clause containing normative material</a></li><li class="h2"><a href="#toc15">      7.1.&#xA0; Requirement Class A or Requirement A Example</a></li><li class="h1"><a href="#toc16">      8.&#xA0; Media Types for any data encoding(s)</a></li><li class="h1"><a href="#toc17">      Annex A (informative) Conformance Class Abstract Test Suite (Normative)</a></li><li class="h2"><a href="#toc18">      A.1.&#xA0; Conformance Class A</a></li><li class="h1"><a href="#toc19">      Annex B (informative) Title</a></li><li class="h1"><a href="#toc20">      Annex C (informative) Revision History</a></li><li class="h1"><a href="#toc21">      Bibliography</a></li></ul></div>
 
 </nav>
 
 
 <div class="rule toc"></div>
 
-      <p>&#xA0;</p>
+      
     </div>
     <br />
     <main class="main-section"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -1392,28 +1435,28 @@ span.hi {
       <br />
       <div id="_abstract">
         <h1 class="AbstractTitle" id="toc0">I.&#xA0; Abstract</h1>
-        <p id="_d586f4f9-15bb-4279-a42c-62b8ec821042">&lt;Insert Abstract Text here&gt;</p>
+        <p id="_ea8b918b-259f-ad32-41cd-bf6720709423">&lt;Insert Abstract Text here&gt;</p>
       </div>
-      <div class="Section3" id="_0da94dea-ba85-4c3f-8513-566e90e61296">
+      <div class="Section3" id="_19317f3f-be4d-4306-9ba5-0e0c80433b3a">
         <h1 class="IntroTitle" id="toc1">II.&#xA0; Keywords</h1>
         <p>The following are keywords to be used by search engines and
     document catalogues.</p>
-        <p>ogcdoc, OGC document, API, openapi, html</p>
+        <p>ogcdoc, OGC document, API, openapi, html, ogcapi</p>
       </div>
       <br />
-      <div id="_e4fe98e7-e1c0-4ea2-8291-305cfebfc36f">
+      <div id="_2fc7f941-8cac-e65f-3e51-3b9f18652ea3">
         <h1 class="ForewordTitle" id="toc2">III.&#xA0; Preface</h1>
-        <div id="_a0c37ae4-ad1d-4178-b5b4-94b953ecaf9c" class="Note">
+        <div id="_b54ab49b-0988-938f-ab2d-38e2ffda33ce" class="Note">
           <p><span class="note_label">NOTE</span>&#xA0; Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.</p>
         </div>
-        <p id="_c4fee548-2fc1-449c-a68a-801a9a54beb2">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
-        <p id="_365b9dac-f180-4053-aabc-69651bb40dc4">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+        <p id="_8ba0feed-acfd-bc4f-1d13-2e75dab20f9a">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+        <p id="_25f6b7a1-8657-2655-9eff-47df179631e0">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
       </div>
-      <div class="Section3" id="_7fce3858-cd6d-4cc9-9505-ed9cf2dac001">
-        <h1 class="IntroTitle" id="toc3">IV.&#xA0; Security Considerations</h1>
-        <p id="_3ce0d908-c586-4d8e-974f-9058f5f27c02">No security considerations have been made for this standard.</p>
+      <div class="Section3" id="_81b1ace7-21d3-2259-3346-8f24ee71ed45">
+        <h1 class="IntroTitle" id="toc3">IV.&#xA0; Security considerations</h1>
+        <p id="_6bffb48c-5a4a-c73f-8352-74e8ed0d680a">No security considerations have been made for this document.</p>
       </div>
-      <div class="Section3" id="_f81b4f14-f3fa-425c-b9a4-cb56dabc2be8">
+      <div class="Section3" id="_d4336dc2-c5ce-482a-93e2-b477d06c7c60">
         <h1 class="IntroTitle" id="toc4">V.&#xA0; Submitting Organizations</h1>
         <p>The following organizations submitted this Document to the
    Open Geospatial Consortium (OGC):</p>
@@ -1425,61 +1468,78 @@ span.hi {
       <p class="zzSTDTitle1">OGC API - Discrete Global Grid Systems - Part 1: Core</p>
       <div id="_scope">
         <h1 id="toc5">1.&#xA0; Scope</h1>
-        <div id="_d2dc7248-cc66-41e6-bbc3-a2ad551a7305" class="Note">
+        <div id="_19759895-aabd-4232-a497-4ca4b6a23eb3" class="Note">
           <p><span class="note_label">NOTE</span>&#xA0; Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document.</p>
         </div>
       </div>
       <div id="_conformance">
         <h1 id="toc6">2.&#xA0; Conformance</h1>
-        <p id="_4e5df26c-31af-464e-897b-0f52979e993f">This standard defines XXXX.</p>
-        <p id="_18d51e2a-c506-4459-a557-5bc89063b4a6">Requirements for N standardization target types are considered:</p>
-        <ul id="_ecef5186-caef-4cd9-903c-fa9827ca0141">
-<li>
-<p id="_f10e6fa7-270d-4912-9eec-5e1d61e0c3b9">AAAA</p>
+        <p id="_12e50e71-32c9-4841-9afc-c19b6e3ab821">This standard defines XXXX.</p>
+        <p id="_b116691a-08b1-0620-ae3d-86e5f3a8a421">Requirements for N standardization target types are considered:</p>
+        <ul id="_7e05e339-83a3-d931-6767-a7c123e12b74"><li><p id="_1bd63b7e-eb98-ad43-1de4-c21d99d60ac2">AAAA</p>
 </li>
-<li>
-<p id="_cfa7cdbb-3295-4e12-907e-62f09d86cbd7">BBBB</p>
+<li><p id="_b6bc9b8a-bd3e-ce9e-7522-1f98d4945205">BBBB</p>
 </li>
 </ul>
-        <p id="_dca985a9-5d3a-4d78-9e05-e07fa0804b7c">Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.</p>
-        <p id="_55dfe6df-ecd1-49c6-8cd1-3e1f4c87a959">In order to conform to this OGC&#xAE; interface standard, a software implementation shall choose to implement:</p>
-        <ul id="_f4c72cf7-f5ec-4fd2-a271-db7f9f88f726">
-<li>
-<p id="_44f10df0-1e60-4a3d-a6da-3798fca09933">Any one of the conformance levels specified in Annex A (normative).</p>
+        <p id="_c881dc19-eab9-6206-0bbd-c6f07d4bb744">Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the OGC Compliance Testing web site.</p>
+        <p id="_7552ac2a-6499-a44e-13ca-4abd7e2a63c4">In order to conform to this OGC&#xAE; interface standard, a software implementation shall choose to implement:</p>
+        <ul id="_85556d81-fbe8-6680-06da-7a660f86b7d0"><li><p id="_28d16a05-e578-c5ec-eb3f-87a36de9e044">Any one of the conformance levels specified in Annex A (normative).</p>
 </li>
-<li>
-<p id="_550ef1df-98ad-4219-b865-36fc0bf0b1d2">Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).</p>
+<li><p id="_0b67bb92-65e2-2183-4a16-11664b0f122f">Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).</p>
 </li>
 </ul>
-        <p id="_495cc7ce-59e8-4351-9b00-93876b3f7ab5">All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.</p>
+        <p id="_595f6be4-4135-af56-59ba-b377f03b0a65">All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.</p>
       </div>
-      <div><h1 id="toc7">3.&#xA0; Normative references</h1><p id="_6f2f240e-1a41-493d-9bca-1e166f795b4d">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
-
-<p id="Smith81" class="NormRef"><i>Identification of Common Molecular Subsequences</i>. Smith, T.F., Waterman, M.S., J. Mol. Biol. 147, 195&#x2013;197 (1981)</p><p id="May06" class="NormRef"><i>ZIB Structure Prediction Pipeline: Composing a Complex Biological Workflow through Web Services</i>. May, P., Ehrlich, H.C., Steinke, T. In: Nagel, W.E., Walter, W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148&#x2013;1158. Springer, Heidelberg (2006)</p><p id="Grid" class="NormRef"><i>The Grid: Blueprint for a New Computing Infrastructure.</i>, Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</p><p id="Czajkowski01" class="NormRef"><i>Grid Information Services for Distributed Resource Sharing.</i>Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High Performance Distributed Computing, pp. 181&#x2013;184. IEEE Press, New York (2001)</p><p id="Foster02" class="NormRef"><i>The Physiology of the Grid: an Open Grid Services Architecture for Distributed Systems Integration.</i>Foster, I., Kesselman, C., Nick, J., Tuecke, S. Technical report, Global Grid Forum (2002)</p><p id="NCBI" class="NormRef"><i>National Center for Biotechnology Information</i>, <a href="http://www.ncbi.nlm.nih.gov">http://www.ncbi.nlm.nih.gov</a></p><p id="ISO19101-1" class="NormRef">ISO: ISO 19101-1:2014, <i>Geographic information&#x2009;&#x2014;&#x2009;Reference model&#x2009;&#x2014;&#x2009;Part 1: Fundamentals</i>. <span>International Organization for Standardization</span>, Geneva (2014). <a href="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</a></p> <p id="ISO19115-1" class="NormRef">ISO: ISO 19115-1:2014, <i>Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;Part 1: Fundamentals</i>. <span>International Organization for Standardization</span>, Geneva (2014). <a href="https://www.iso.org/standard/53798.html">https://www.iso.org/standard/53798.html</a></p> <p id="ISO19157" class="NormRef">ISO: ISO 19157:2013, <i>Geographic information &#x2009;&#x2014;&#x2009;Data quality</i>. <span>International Organization for Standardization</span>, Geneva (2013). <a href="https://www.iso.org/standard/32575.html">https://www.iso.org/standard/32575.html</a></p><p id="ISO19139" class="NormRef">ISO: ISO 19139:2007, <i>Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;XML schema implementation</i>. <span>ISO</span> (2007). </p><p id="ISO19115-3" class="NormRef">ISO: ISO/CD 19115-3, <i>Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;Part 3: XML schema implementation for fundamental concepts</i>. <span>International Organization for Standardization</span>, Geneva<a href="https://www.iso.org/standard/80874.html">https://www.iso.org/standard/80874.html</a></p> <p id="OGC15-097" class="NormRef">Joan Mas&#xF3; and Lucy Bastin : OGC 15-097r1, <i>OGC&#xAE; Geospatial User Feedback Standard: Conceptual Model</i>. <span>Open Geospatial Consortium</span> (2016). <a href="http://docs.opengeospatial.org/is/15-097r1/15-097r1.html">http://docs.opengeospatial.org/is/15-097r1/15-097r1.html</a></p> <p id="OGC12-019" class="NormRef">Gerhard Gr&#xF6;ger, Thomas H. Kolbe, Claus Nagel, Karl-Heinz H&#xE4;fele: OGC 12-019, <i>OGC City Geography Markup Language (CityGML) Encoding Standard</i>. <span>Open Geospatial Consortium</span> (2012). <a href="https://portal.ogc.org/files/?artifact_id=47842">https://portal.ogc.org/files/?artifact_id=47842</a></p> <p id="OGC14-005r3" class="NormRef">Jiyeong Lee, Ki-Joune Li, Sisi Zlatanova, Thomas H. Kolbe, Claus Nagel, Thomas Becker: OGC 14-005r3, <i>OGC&#xAE; IndoorGML</i>. <span>Open Geospatial Consortium</span> (2014). <a href="http://docs.opengeospatial.org/is/14-005r3/14-005r3.html">http://docs.opengeospatial.org/is/14-005r3/14-005r3.html</a></p> <p id="OGC06121r9" class="NormRef">Arliss Whiteside Jim Greenwood : OGC 06-121r9, <i>OGC Web Service Common Implementation Specification</i>. <span>Open Geospatial Consortium</span> (2010). <a href="https://portal.ogc.org/files/?artifact_id=38867">https://portal.ogc.org/files/?artifact_id=38867</a></p></div>
-      <div id="_terms_and_definitions"><h1 id="toc8">4.&#xA0; Terms and definitions</h1><p id="_2afe4973-2fae-4758-8b09-f590a46f2a5c">For the purposes of this document,
-    the following terms and definitions apply.</p><p id="_ef496295-43d6-424f-a522-1170bee386d7">This document uses the terms defined in Sub-clause 5.3 of <a href="#OGC06-121r9">[OGC06-121r9]</a>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word &#x201C;shall&#x201D; (not &#x201C;must&#x201D;) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.</p><p id="_dc0fbfab-2b2f-4b35-90c4-f6f5f65b2900">For the purposes of this document, the following additional terms and definitions apply.</p><h2 class="TermNum" id="term-example-term">4.1.&#xA0;<p class="Terms" style="text-align:left;">example term</p></h2><p id="_49cfaf02-efe3-49dd-beae-da763ad299a8">term used for exemplary purposes</p>
+      <div><h1 id="toc7">3.&#xA0; Normative references</h1>
+<p id="_307b20e2-9e40-db56-abbf-2822ab2941cc">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</p>
 
 
-<div id="_ae2eafa3-21fa-42e6-97ca-2127cb96ac1e" class="Note"><p>Note 1 to entry: An example note.</p></div><p class="SourceTitle" style="text-align:center;">Example </p><div id="_b02827cc-160e-4fd4-8247-68d328617c12" class="example">
-<p id="_4ee610f3-4013-4496-a997-4ccea89f108d">Here&#x2019;s an example of an example term.</p>
-</div><p>[SOURCE: <a href="#ISO19101-1">ISO 19101-1:2014</a>]</p></div>
+
+
+<p id="Smith81" class="NormRef"><i>Identification of Common Molecular Subsequences</i>. Smith, T.F., Waterman, M.S., J. Mol. Biol. 147, 195&#x2013;197 (1981)</p>
+<p id="May06" class="NormRef"><i>ZIB Structure Prediction Pipeline: Composing a Complex Biological Workflow through Web Services</i>. May, P., Ehrlich, H.C., Steinke, T. In: Nagel, W.E., Walter, W.V., Lehner, W. (eds.) Euro-Par 2006. LNCS, vol. 4128, pp. 1148&#x2013;1158. Springer, Heidelberg (2006)</p>
+<p id="Grid" class="NormRef"><i>The Grid: Blueprint for a New Computing Infrastructure.</i>, Foster, I., Kesselman, C.. Morgan Kaufmann, San Francisco (1999).</p>
+<p id="Czajkowski01" class="NormRef"><i>Grid Information Services for Distributed Resource Sharing.</i>Czajkowski, K., Fitzgerald, S., Foster, I., Kesselman, C. In: 10th IEEE International Symposium on High Performance Distributed Computing, pp. 181&#x2013;184. IEEE Press, New York (2001)</p>
+<p id="Foster02" class="NormRef"><i>The Physiology of the Grid: an Open Grid Services Architecture for Distributed Systems Integration.</i>Foster, I., Kesselman, C., Nick, J., Tuecke, S. Technical report, Global Grid Forum (2002)</p>
+<p id="NCBI" class="NormRef"><i>National Center for Biotechnology Information</i>, <a href="http://www.ncbi.nlm.nih.gov">http://www.ncbi.nlm.nih.gov</a></p>
+<p id="ISO19101-1" class="NormRef">ISO: ISO 19101-1:2014, <i>Geographic information&#x2009;&#x2014;&#x2009;Reference model&#x2009;&#x2014;&#x2009;Part 1: Fundamentals</i>. <span>International Organization for Standardization</span>, Geneva (2014). <a href="https://www.iso.org/standard/59164.html">https://www.iso.org/standard/59164.html</a></p>
+ <p id="ISO19115-1" class="NormRef">ISO: ISO 19115-1:2014, <i>Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;Part 1: Fundamentals</i>. <span>International Organization for Standardization</span>, Geneva (2014). <a href="https://www.iso.org/standard/53798.html">https://www.iso.org/standard/53798.html</a></p>
+ <p id="ISO19157" class="NormRef">ISO: ISO 19157:2013, <i>Geographic information &#x2009;&#x2014;&#x2009;Data quality</i>. <span>International Organization for Standardization</span>, Geneva (2013). <a href="https://www.iso.org/standard/32575.html">https://www.iso.org/standard/32575.html</a></p>
+<p id="ISO19139" class="NormRef">ISO: ISO 19139:2007, <i>Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;XML schema implementation</i>. <span>ISO</span> (2007). </p>
+<p id="ISO19115-3" class="NormRef">ISO: ISO/DIS 19115-3, <i>Geographic information&#x2009;&#x2014;&#x2009;Metadata&#x2009;&#x2014;&#x2009;Part 3: XML schema implementation for fundamental concepts</i>. <span>International Organization for Standardization</span>, Geneva<a href="https://www.iso.org/standard/80874.html">https://www.iso.org/standard/80874.html</a></p>
+<p id="OGC15-097" class="NormRef"><i>OGC Geospatial User Feedback Standard: Conceptual Model</i> (2016)</p>
+<p id="OGC12-019" class="NormRef">Gerhard Gr&#xF6;ger, Thomas H. Kolbe, Claus Nagel, Karl-Heinz H&#xE4;fele: OGC 12-019, <i>OGC City Geography Markup Language (CityGML) Encoding Standard</i>. <span>Open Geospatial Consortium</span> (2012). <a href="https://portal.ogc.org/files/?artifact_id=47842">https://portal.ogc.org/files/?artifact_id=47842</a></p>
+ <p id="OGC14-005r3" class="NormRef">Jiyeong Lee, Ki-Joune Li, Sisi Zlatanova, Thomas H. Kolbe, Claus Nagel, Thomas Becker: OGC 14-005r3, <i>OGC&#xAE; IndoorGML</i>. <span>Open Geospatial Consortium</span> (2014). <a href="http://docs.opengeospatial.org/is/14-005r3/14-005r3.html">http://docs.opengeospatial.org/is/14-005r3/14-005r3.html</a></p>
+ <p id="OGC06121r9" class="NormRef">Arliss Whiteside Jim Greenwood : OGC 06-121r9, <i>OGC Web Service Common Implementation Specification</i>. <span>Open Geospatial Consortium</span> (2010). <a href="https://portal.ogc.org/files/?artifact_id=38867">https://portal.ogc.org/files/?artifact_id=38867</a></p>
+</div>
+      <div id="_terms_and_definitions"><h1 id="toc8">4.&#xA0; Terms and definitions</h1><p id="_7fe04b5b-db41-5d9b-ebe1-463b3a0c16c9">This document uses the terms defined in <a href="https://portal.ogc.org/public_ogc/directives/directives.php">OGC Policy Directive 49</a>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word &#x201C;shall&#x201D; (not &#x201C;must&#x201D;) is the verb form used to indicate a requirement to be strictly followed to conform to this document and OGC documents do not use the equivalent phrases in the ISO/IEC Directives, Part 2.</p><p id="_e0235fe8-8273-26b4-faeb-a580ad58929f">This document also uses terms defined in the OGC Standard for Modular specifications (<a href="https://portal.opengeospatial.org/files/?artifact_id=34762">OGC 08-131r3</a>), also known as the &#x2018;ModSpec&#x2019;. The definitions of terms such as standard, specification, requirement, and conformance test are provided in the ModSpec.</p><p id="_1448dc16-8929-d666-6525-0249826c75e3">For the purposes of this document, the following additional terms and definitions apply.</p><p id="_a5c2011b-080b-de57-753c-94b804e5f324">This document uses the terms defined in Sub-clause 5.3 of <a href="#OGC06-121r9">[OGC06-121r9]</a>, which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word &#x201C;shall&#x201D; (not &#x201C;must&#x201D;) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.</p><p id="_ccf3e63b-6acc-0cd0-687c-fd7f951288d6">For the purposes of this document, the following additional terms and definitions apply.</p><h2 class="TermNum" style="text-align:left;" id="term-example-term">4.1.&#xA0;<b>example term</b></h2>
+<p id="_06db0da1-214c-7f57-bd34-fd4f77edb6ed">term used for exemplary purposes</p>
+
+
+
+
+
+
+ <div id="_dba7a326-d460-4fd2-c200-c18e257c490b" class="Note"><p>Note 1 to entry: An example note.</p></div><p class="SourceTitle" style="text-align:center;">Example </p><div id="_6e5e388f-3384-3fe0-1387-5c648e5561e6" class="example"><p id="_2d45db5a-97c4-2358-7890-3aa696c4b809">Here&#x2019;s an example of an example term.</p>
+</div><p>[<b>SOURCE:</b> <a href="#ISO19101-1">ISO 19101-1:2014</a>]</p></div>
       <div id="_conventions">
         <h1 id="toc9">5.&#xA0; Conventions</h1>
-        <p id="_155b235f-d02a-4be4-a568-73fe8e5f552b">This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
-        <div id="_identifiers"><h2 id="toc10">5.1.&#xA0; Identifiers</h2><p id="_228e350d-a61a-4626-9bab-a870a9c344b4">The normative provisions in this standard are denoted by the URI</p>
-<p id="_ef64d7c8-18cc-4b35-8864-0691319ce609">
-<tt>
-<a href="http://www.opengis.net/spec/{standard}/{m.n}">http://www.opengis.net/spec/{standard}/{m.n}</a>
-</tt>
-</p>
-<p id="_4b83e8c0-04e8-4335-9a2a-17d09f15303b">All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.</p></div>
+        <p id="_f287e0a4-ca0e-ef98-6e01-5d09472b62aa">This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.</p>
+        <div id="_identifiers"><h2 id="toc10">5.1.&#xA0; Identifiers</h2>
+
+<p id="_34025c5d-dda4-c61f-5774-94f51d938b80">The normative provisions in this standard are denoted by the URI</p>
+
+<p id="_f0191874-4eeb-2c92-18f2-f1367cf61a60"><tt><a href="http://www.opengis.net/spec/{standard}/{m.n}">http://www.opengis.net/spec/{standard}/{m.n}</a></tt></p>
+
+<p id="_52250454-5ac3-4fce-7c83-eb454adf6103">All requirements and conformance tests that appear in this document are denoted by partial URIs which are relative to this base.</p>
+</div>
       </div>
       <div id="_clauses_not_containing_normative_material">
         <h1 id="toc11">6.&#xA0; Clauses not Containing Normative Material</h1>
-        <p id="_9f9aacb5-cbf5-437c-8e61-447a9773ae52">Paragraph</p>
+        <p id="_6f5c8cdc-826f-564e-03f0-7b929261119c">Paragraph</p>
         <div id="_clauses_not_containing_normative_material_sub_clause_1"><h2 id="toc12">6.1.&#xA0; Clauses not containing normative material sub-clause 1</h2>
 
-<p id="_83dc98af-c712-4507-9b5a-c4b231265ab8">Paragraph</p>
+<p id="_99f22d46-0d65-7e82-4ecc-93498c6ea8b6">Paragraph</p>
 </div>
         <div id="_clauses_not_containing_normative_material_sub_clause_2"><h2 id="toc13">6.2.&#xA0; Clauses not containing normative material sub-clause 2</h2>
 
@@ -1487,95 +1547,95 @@ span.hi {
       </div>
       <div id="_clause_containing_normative_material">
         <h1 id="toc14">7.&#xA0; Clause containing normative material</h1>
-        <p id="_f4d5e68a-706c-4901-9ec7-51612d895e54">Paragraph</p>
-        <div id="_requirement_class_a_or_requirement_a_example"><h2 id="toc15">7.1.&#xA0; Requirement Class A or Requirement A Example</h2><p id="_1e999747-c516-4e53-9391-60728fc52b87">Paragraph &#x2013; intro text for the requirement class.</p>
-<p id="_9fee66fc-5254-486d-ba6d-0d4f83ea215f">Use the following table for Requirements Classes.</p>
-<table id="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a" class="recommendclass" style="border-collapse:collapse;border-spacing:0;"><thead><tr><th colspan="2" style="vertical-align:top;" scope="colgroup" class="recommend"><p class="RecommendationTitle">Requirement Class 1:</p></th></tr></thead><tbody><tr><td style="vertical-align:top;" class="recommend">Obligation</td><td style="vertical-align:top;" class="recommend">requirement</td></tr><tr><td colspan="2" style="vertical-align:top;" class="recommend"><p id="_239ee35c-5248-4dd2-83c4-f4a53a710279">Requirements Class</p>
-<ul id="_789fb791-f08b-476d-a735-088cbe113b51">
-<li>
-<p id="_547457b9-1665-4d7a-9871-84e35ac587fd">
-<a href="http://www.example.org/req/blah">http://www.example.org/req/blah</a>
-</p>
+        <p id="_e346d47b-e37b-bad0-b7a8-85b3051c2c9a">Paragraph</p>
+        <div id="_requirement_class_a_or_requirement_a_example"><h2 id="toc15">7.1.&#xA0; Requirement Class A or Requirement A Example</h2>
+
+<p id="_2571912e-e61e-678f-90b6-b6debf92814c">Paragraph &#x2013; intro text for the requirement class.</p>
+
+<p id="_1ad1f3a4-290a-4b26-7f68-a63544f01832">Use the following table for Requirements Classes.</p>
+
+<table id="http___www.opengis.net_spec_ABCD_m.n_req_req-class-a" class="recommendclass" style="border-collapse:collapse;border-spacing:0;"><thead><tr><th colspan="2" style="vertical-align:top;" scope="colgroup" class="recommend"><p class="RecommendationTitle">Requirements class 1</p></th></tr></thead><tbody><tr><td style="vertical-align:top;" class="recommend">Obligation</td><td style="vertical-align:top;" class="recommend">requirement</td></tr><tr><td colspan="2" style="vertical-align:top;" class="recommend"><p id="_afbd9ff1-48f9-3d6b-bf2d-9cf250b73503">Requirements Class</p><ul id="_91cca0de-3eef-25f5-a1bd-876ed4308711"><li><p id="_0764fa86-d4c1-8091-85da-a1c641af2180"><a href="http://www.example.org/req/blah">http://www.example.org/req/blah</a></p>
 </li>
-<li>
-<p id="_7f9578ec-d677-469c-987d-5a3b272f4b52">urn:iso:ts:iso:19139:clause:6</p>
+<li><p id="_f546d3c6-46d2-36f5-e566-79f27052171a">urn:iso:ts:iso:19139:clause:6</p>
 </li>
-</ul>
-</td></tr><tr><td style="vertical-align:top;" class="recommend"><p>Requirement 1-1:</p></td><td style="vertical-align:top;" class="recommend">
-<p id="_c62528e8-afb6-45e0-953d-9a0290449dda">requirement description</p>
-</td></tr><tr><td style="vertical-align:top;" class="recommend"><p>Requirement 1-2:</p></td><td style="vertical-align:top;" class="recommend">
-<p id="_320e89b6-98f0-44ca-8ca7-c71d5e66dc4f">requirement description</p>
-</td></tr><tr><td style="vertical-align:top;" class="recommend"><p>Requirement 1-3:</p></td><td style="vertical-align:top;" class="recommend">
-<p id="_6d7d9ab7-2b24-4a57-8926-3d291894520c">requirement description</p>
-</td></tr></tbody></table>
-<div id="_requirement_1"><h3>7.1.1.&#xA0; Requirement 1</h3><p id="_544ca525-4e66-44cd-92d8-99dc510f9524">Paragraph&#x2009;&#x2014;&#x2009;intro text for the requirement.</p>
-<p id="_d7223a3c-5baa-45ec-bb8a-ff53714a3614">Use the following table for Requirements, number sequentially.</p>
-<table id="_req_req-class-a_req-name-1" class="recommend" style="border-collapse:collapse;border-spacing:0;"><thead><tr><th colspan="2" style="vertical-align:top;" scope="colgroup" class="recommend"><p class="RecommendationTitle">Requirement 1:</p></th></tr></thead><tbody><tr><td style="vertical-align:top;" class="recommend">Obligation</td><td style="vertical-align:top;" class="recommend">requirement</td></tr><tr><td colspan="2" style="vertical-align:top;" class="recommend">
-<p id="_c4bb9d57-0b3b-4377-b1fc-28c128222f56">Requirement &#x2018;shall&#x2019; statement</p>
-</td></tr></tbody></table>
-<p id="_2a1bab20-f5a7-44bd-b015-a93cd9245238">Dictionary tables for requirements can be added as necessary. Modify the following example as needed.</p>
-<p class="TableTitle" style="text-align:center;">Table 1</p><table id="_d91f86a1-5b81-4c65-b02b-a1598a156c2a" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:90%;"><thead><tr><th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Names</th><th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Definition</th><th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Data types and values</th><th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Multiplicity and use</th></tr></thead><tbody><tr><td style="text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">name 1</td><td style="text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">definition of name 1</td><td style="text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">float</td><td style="text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">One or more (mandatory)</td></tr><tr><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">name 2</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">definition of name 2</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">character string type, not empty</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Zero or one (optional)</td></tr><tr><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">name 3</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">definition of name 3</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">GML:: Point PropertyType</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">One (mandatory)</td></tr></tbody></table></div></div>
+</ul></td></tr><tr><td style="vertical-align:top;" class="recommend"><p>Requirement 1-1</p></td><td style="vertical-align:top;" class="recommend"><p id="_7a2c71c8-d37b-f492-f889-0f1d60baf760">requirement description</p></td></tr><tr><td style="vertical-align:top;" class="recommend"><p>Requirement 1-2</p></td><td style="vertical-align:top;" class="recommend"><p id="_ff73872a-fc0e-a168-12cb-9683da3d3174">requirement description</p></td></tr><tr><td style="vertical-align:top;" class="recommend"><p>Requirement 1-3</p></td><td style="vertical-align:top;" class="recommend"><p id="_c46d3fec-4d21-69d8-2ef1-668132f04dac">requirement description</p></td></tr></tbody></table>
+
+<div id="_requirement_1"><h3>7.1.1.&#xA0; Requirement 1</h3>
+
+<p id="_35d88c6d-ed1f-c0c3-fbe0-3dd618e05d35">Paragraph&#x2009;&#x2014;&#x2009;intro text for the requirement.</p>
+
+<p id="_2c02de4d-abb2-5df7-0c61-0835e9a24783">Use the following table for Requirements, number sequentially.</p>
+
+<table id="_req_req-class-a_req-name-1" class="recommend" style="border-collapse:collapse;border-spacing:0;"><thead><tr><th colspan="2" style="vertical-align:top;" scope="colgroup" class="recommend"><p class="RecommendationTitle">Requirement 1</p></th></tr></thead><tbody><tr><td style="vertical-align:top;" class="recommend">Obligation</td><td style="vertical-align:top;" class="recommend">requirement</td></tr><tr><td colspan="2" style="vertical-align:top;" class="recommend"><p id="_cadb98b9-98d5-b57e-13a0-db23e990aa2e">Requirement &#x2018;shall&#x2019; statement</p></td></tr></tbody></table>
+
+<p id="_baaad289-dde8-9a33-ec20-b6e0292b27b2">Dictionary tables for requirements can be added as necessary. Modify the following example as needed.</p>
+
+<p class="TableTitle" style="text-align:center;">Table 1</p><table id="_baffd499-ce22-93c1-8644-ba20e774b820" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:90%;"><thead><tr><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Names</th><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Definition</th><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Data types and values</th><th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Multiplicity and use</th></tr></thead><tbody><tr><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">name 1</td><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">definition of name 1</td><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">float</td><td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">One or more (mandatory)</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">name 2</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">definition of name 2</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">character string type, not empty</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.0pt;">Zero or one (optional)</td></tr><tr><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">name 3</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">definition of name 3</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">GML:: Point PropertyType</td><td style="text-align:left;vertical-align:middle;border-top:none;border-bottom:solid windowtext 1.5pt;">One (mandatory)</td></tr></tbody></table>
+</div>
+</div>
       </div>
       <div id="_media_types_for_any_data_encodings">
         <h1 id="toc16">8.&#xA0; Media Types for any data encoding(s)</h1>
-        <p id="_8e728a18-15fa-449f-b0cb-2db6c3785cf0">A section describing the MIME-types to be used is mandatory for any standard involving data encodings. If no suitable MIME type exists in <a href="http://www.iana.org/assignments/media-types/index.html">http://www.iana.org/assignments/media-types/index.html</a> then this section may be used to define a new MIME type for registration with IANA.</p>
+        <p id="_9edcb2e8-b4ab-3495-e76a-87c21ea5743d">A section describing the MIME-types to be used is mandatory for any standard involving data encodings. If no suitable MIME type exists in <a href="http://www.iana.org/assignments/media-types/index.html">http://www.iana.org/assignments/media-types/index.html</a> then this section may be used to define a new MIME type for registration with IANA.</p>
       </div>
       <br />
       <div id="_conformance_class_abstract_test_suite_normative" class="Section3">
-        <h1 class="Annex" id="toc17"><b>Annex A</b><br />(normative)<br /><b>Conformance Class Abstract Test Suite (Normative)</b></h1>
-        <div id="_99edd996-c2f6-40a8-84fc-f5d42ac3eb02" class="Note">
+        <h1 class="Annex" id="toc17"><b>Annex A</b><br />(informative)<br /><b>Conformance Class Abstract Test Suite (Normative)</b></h1>
+        <div id="_49fa4119-ff23-ba00-2b10-7c6008e83cc9" class="Note">
           <p><span class="note_label">NOTE</span>&#xA0; Ensure that there is a conformance class for each requirements class and a test for each requirement (identified by requirement name and number)</p>
         </div>
-        <div id="_conformance_class_a"><h2 id="toc18">A.1.&#xA0; Conformance Class A</h2><div id="_requirement_1_2"><h3>A.1.1.&#xA0; Requirement 1</h3>
+        <div id="_conformance_class_a"><h2 id="toc18">A.1.&#xA0; Conformance Class A</h2>
 
-<table id="_6a79d959-c40f-429a-9262-859a0d195379" class="recommend" style="border-collapse:collapse;border-spacing:0;"><thead><tr><th colspan="2" style="vertical-align:top;" scope="colgroup" class="recommend"><p class="RecommendationTitle">Requirement A.1:</p></th></tr></thead><tbody><tr><td colspan="2" style="vertical-align:top;" class="recommend"><p>/req/req-class-a/req-name-1</p></td></tr><tr><td colspan="2" style="vertical-align:top;" class="recommend">
-<p class="SourceTitle" style="text-align:center;">Example </p><div id="_5da4b62d-938b-4982-bf08-e783cc50a5f6" class="example">
-<dl id="_d0f81e48-f3fd-4e55-8a6e-0ab2a1459701"><dt><p>Test purpose</p></dt><dd>
-<p id="_b2e0fee6-ec9b-4aa2-88be-8f7c517c53b3">Verify that&#x2026;&#x200B;</p>
-</dd><dt><p>Test method</p></dt><dd>
-<p id="_50157140-6663-4fbe-b76a-937b8505ca45">Inspect&#x2026;&#x200B;</p>
-</dd></dl>
-</div>
+<div id="_requirement_1_2"><h3>A.1.1.&#xA0; Requirement 1</h3>
+
+<table id="_5bbb472c-11f6-71bb-e0cb-984db40069de" class="recommend" style="border-collapse:collapse;border-spacing:0;"><thead><tr><th colspan="2" style="vertical-align:top;" scope="colgroup" class="recommend"><p class="RecommendationTitle">Requirement A.1</p></th></tr></thead><tbody><tr><td colspan="2" style="vertical-align:top;" class="recommend"><p>/req/req-class-a/req-name-1</p></td></tr><tr><td style="vertical-align:top;" class="recommend">Test purpose</td><td style="vertical-align:top;" class="recommend"><p id="_d47d8426-5d28-1c1c-2ac5-d2cb76633cdb">Verify that&#x2026;&#x200B;</p>
+</td></tr><tr><td style="vertical-align:top;" class="recommend">Test method</td><td style="vertical-align:top;" class="recommend"><p id="_82b50db0-7bcd-8066-e386-e61f2727f4c2">Inspect&#x2026;&#x200B;</p>
 </td></tr></tbody></table>
 </div>
+
 <div id="_requirement_2"><h3>A.1.2.&#xA0; Requirement 2</h3>
 
-</div></div>
+</div>
+</div>
       </div>
       <br />
       <div id="_title" class="Section3">
         <h1 class="Annex" id="toc19"><b>Annex B</b><br />(informative)<br /><b>Title</b></h1>
-        <div id="_b2398c66-df5e-4cc6-bad8-8dfbab32eab4" class="Note">
+        <div id="_9c04cf83-97ee-5129-1540-d560e28d0909" class="Note">
           <p><span class="note_label">NOTE</span>&#xA0; Place other Annex material in sequential annexes beginning with &#x201C;B&#x201D; and leave final two annexes for the Revision History and Bibliography</p>
         </div>
       </div>
       <br />
       <div id="_revision_history" class="Section3">
-        <h1 class="Annex" id="toc20"><b>Annex C</b><br />(normative)<br /><b>Revision History</b></h1>
+        <h1 class="Annex" id="toc20"><b>Annex C</b><br />(informative)<br /><b>Revision History</b></h1>
         <p class="TableTitle" style="text-align:center;">Table C.1</p>
-        <table id="_3da0e552-7581-46e3-b58c-55dc89eb6299" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:90%;">
+        <table id="_b491561e-0766-3f3b-04d6-56fc96fed3e2" class="MsoISOTable" style="border-width:1px;border-spacing:0;width:90%;">
           <thead>
             <tr>
-              <th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Date</th>
-              <th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Release</th>
-              <th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Editor</th>
-              <th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Primary clauses modified</th>
-              <th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Description</th>
+              <th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Date</th>
+              <th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Release</th>
+              <th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Editor</th>
+              <th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Primary clauses modified</th>
+              <th style="font-weight:bold;text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Description</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style="text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">2016-04-28</td>
-              <td style="text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">0.1</td>
-              <td style="text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">G. Editor</td>
-              <td style="text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">all</td>
-              <td style="text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">initial version</td>
+              <td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">2021-05-17</td>
+              <td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">0.1</td>
+              <td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">Matthew Purss</td>
+              <td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">all</td>
+              <td style="text-align:left;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;">initial version</td>
             </tr>
           </tbody>
         </table>
       </div>
       <br />
-      <div><h1 class="Section3" id="toc21">Bibliography</h1><div id="_1a496e00-39a6-4231-9a8a-5a4caa762937" class="Note"><p><span class="note_label">NOTE</span>&#xA0; The TC has approved Springer LNCS as the official document citation type.</p><p id="_87b2d18e-f634-4dce-b985-df5980d9ab3f">Springer LNCS is widely used in technical and computer science journals and other publications</p><p id="_1f7e5246-a1fa-470f-b600-f8dc3153a4f5">&#x2013; Actual References:</p><p id="_29b4540f-ac5d-412d-aff3-3f5453558d5b">[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p><p id="_a8dc51b0-5fb0-484b-b13e-40ab29020685">[n] Web: Author Surname, A.: Title, <a href="http://Website-Url">http://Website-Url</a></p></div><p id="OGC2015" class="Biblio">[1]&#xA0; <i>OGC: OGC Testbed 12 Annex B: Architecture</i> (2015).</p>
+      <div><h1 class="Section3" id="toc21">Bibliography</h1>
+
+<div id="_8c451949-eee2-e761-309f-530ec0fefcea" class="Note"><p><span class="note_label">NOTE</span>&#xA0; The TC has approved Springer LNCS as the official document citation type.</p><p id="_4b95e711-c35f-134f-4850-3e819a15ddb0">Springer LNCS is widely used in technical and computer science journals and other publications</p><p id="_91991dd8-2854-d4d4-c3b7-71e34448cc8e">&#x2013; Actual References:</p><p id="_a19eddb1-f343-b2d8-fb7c-28a962268999">[n] Journal: Author Surname, A.: Title. Publication Title. Volume number, Issue number, Pages Used (Year Published)</p><p id="_7793dbd3-cc06-ae69-4dea-78cf8d0d86c2">[n] Web: Author Surname, A.: Title, <a href="http://Website-Url">http://Website-Url</a></p></div><p id="OGC2015" class="Biblio">[1]&#xA0; <i>OGC: OGC Testbed 12 Annex B: Architecture</i> (2015).</p>
+
+
 </div>
     </main>
   <script type="text/x-mathjax-config">
